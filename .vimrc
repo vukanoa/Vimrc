@@ -91,3 +91,4 @@ inoremap ,, <Esc>/<++><CR>"_c4l
 nnoremap <Leader>vim :vs ~/.vimrc<CR>
 vmap <leader>( "2di(<Esc>pa,,<Esc>
 vmap <leader>[ "3di[<Esc>pa,,<Esc>
+inoremap ,for <Esc>:read ~/.vim/for<CR>:set lazyredraw<CR>kddV3j=/<++><CR>"_c4l
