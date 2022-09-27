@@ -24,6 +24,10 @@ set textwidth=79
 set colorcolumn=80
 highlight ColorColumn ctermbg=Black
 
+" Built in Fuzzy finder
+set path+=**
+set wildmenu
+
 " Better than default
 set splitright
 set splitbelow
