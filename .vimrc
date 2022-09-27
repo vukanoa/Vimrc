@@ -64,6 +64,20 @@ nnoremap <C-l> <C-w>l
 noremap <leader>h 10<C-w>>
 noremap <leader>l 10<C-w><
 
+" Disable Arrows keys
+for key in ['<Up>', '<Down>', '<Left>', '<Right>']
+	exec 'noremap' key '<Nop>'
+	exec 'inoremap' key '<Nop>'
+	exec 'vnoremap' key '<Nop>'
+endfor
+
+" '!' means both Insert and Command-line mode. BS is a Backspace.
+" Essentially - Delete a whole word with <C-BS>
+noremap! <C-BS> <C-w>
+noremap! <C-h> <C-w>
+inoremap <C-w> <C-\><C-o>dB
+inoremap <C-BS> <C-\><C-o>db
+
 " -------------------------- "
 " -- Trailing White Space -- "
 " -------------------------- "
