@@ -35,6 +35,20 @@ inoremap ( ()<++><Esc>F)i
 inoremap [ []<++><Esc>F]i
 inoremap {<CR> {<CR>}<Esc>O
 
+" Center cursor when moving
+nnoremap <C-d> <C-d>M
+nnoremap <C-u> <C-u>M
+
+" Windows jumping
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+" Windows resizing while split
+noremap <leader>h 10<C-w>>
+noremap <leader>l 10<C-w><
+
 " My weird mappings
 inoremap ,, <Esc>/<++><CR>"_c4l
 nnoremap <Leader>vim :vs ~/.vimrc<CR>
