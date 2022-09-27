@@ -35,6 +35,13 @@ inoremap ( ()<++><Esc>F)i
 inoremap [ []<++><Esc>F]i
 inoremap {<CR> {<CR>}<Esc>O
 
+" Filetypes
+autocmd Filetype c inoremap " ""<++><Esc>F"i
+autocmd Filetype c vnoremap // :norm I//<CR>
+autocmd Filetype c set textwidth=0
+autocmd Filetype vim set textwidth=0
+autocmd FileType make set noexpandtab
+
 " Center cursor when moving
 nnoremap <C-d> <C-d>M
 nnoremap <C-u> <C-u>M
@@ -48,6 +55,14 @@ nnoremap <C-l> <C-w>l
 " Windows resizing while split
 noremap <leader>h 10<C-w>>
 noremap <leader>l 10<C-w><
+
+" -------------------------- "
+" -- Trailing White Space -- "
+" -------------------------- "
+" Match white space at the end of lines with <F5> and delete them with <F6>
+highlight ExtraWhitespace ctermbg=yellow
+nnoremap <F5> :match ExtraWhitespace /\s\+$/<CR>
+nnoremap <F6> :%s/\s\+$//g<CR>
 
 " My weird mappings
 inoremap ,, <Esc>/<++><CR>"_c4l
