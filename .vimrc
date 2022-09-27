@@ -46,6 +46,10 @@ autocmd Filetype c set textwidth=0
 autocmd Filetype vim set textwidth=0
 autocmd FileType make set noexpandtab
 
+" Use selection CLIPBOARD, not PRIMARY
+vnoremap <C-c> "+y
+nnoremap <C-p> "+P
+
 " Center cursor when moving
 nnoremap <C-d> <C-d>M
 nnoremap <C-u> <C-u>M
