@@ -18,6 +18,8 @@ set smarttab
 set backspace=indent,eol,start
 set ruler
 set laststatus=0 "Never have a status line
+set ignorecase
+set smartcase
 set wrap
 set linebreak
 set textwidth=79
@@ -31,6 +33,7 @@ set wildmenu
 " Better than default
 set splitright
 set splitbelow
+set undofile
 vnoremap p "_dP
 nnoremap Y v$hy
 
