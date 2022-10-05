@@ -12,6 +12,7 @@ set nohlsearch
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
+set autoindent "Now both S and cc work with indentation
 set smartindent
 set noexpandtab
 set smarttab
@@ -25,6 +26,12 @@ set linebreak
 set textwidth=79
 set colorcolumn=80
 highlight ColorColumn ctermbg=Black
+
+" Undo
+if has('persistent_undo')
+  set undofile
+  set undodir=$HOME/.vim/.undo
+endif   
 
 " Built in Fuzzy finder
 set path+=**
@@ -47,6 +54,7 @@ autocmd Filetype c inoremap " ""<++><Esc>F"i
 autocmd Filetype c vnoremap // :norm I//<CR>
 autocmd Filetype c set textwidth=0
 autocmd Filetype vim set textwidth=0
+autocmd Filetype sh set textwidth=0
 autocmd FileType make set noexpandtab
 
 " Use selection CLIPBOARD, not PRIMARY
@@ -81,10 +89,7 @@ noremap! <C-h> <C-w>
 inoremap <C-w> <C-\><C-o>dB
 inoremap <C-BS> <C-\><C-o>db
 
-" -------------------------- "
-" -- Trailing White Space -- "
-" -------------------------- "
-" Match white space at the end of lines with <F5> and delete them with <F6>
+" Trailing White Space
 highlight ExtraWhitespace ctermbg=yellow
 nnoremap <F5> :match ExtraWhitespace /\s\+$/<CR>
 nnoremap <F6> :%s/\s\+$//g<CR>
