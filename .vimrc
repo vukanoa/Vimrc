@@ -5,6 +5,8 @@ colorscheme gruvbox
 
 let mapleader="\<Space>"
 
+set nocompatible
+set encoding=utf-8
 set number
 set relativenumber
 set incsearch
