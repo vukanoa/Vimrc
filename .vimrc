@@ -1,6 +1,8 @@
 syntax on
 
 set bg=dark
+" :set runtimepath
+" usr/local/share/vim/vim90/colors/grubvox.vim
 colorscheme gruvbox
 
 let mapleader="\<Space>"
@@ -55,6 +57,7 @@ inoremap {<CR> {<CR>}<Esc>O
 autocmd Filetype c inoremap " ""<++><Esc>F"i
 autocmd Filetype c vnoremap // :norm I//<CR>
 autocmd Filetype c set textwidth=0
+autocmd Filetype cpp set textwidth=0		" cpp is not C++ but C preprocessor
 autocmd Filetype vim set textwidth=0
 autocmd Filetype sh set textwidth=0
 autocmd FileType make set noexpandtab
@@ -103,3 +106,4 @@ vmap <leader>( "2di(<Esc>pa,,<Esc>
 vmap <leader>[ "3di[<Esc>pa,,<Esc>
 inoremap ,for <Esc>:read ~/.vim/for<CR>:set lazyredraw<CR>kddV3j=/<++><CR>"_c4l
 nnoremap <leader>in =a{
+nnoremap <leader>sp O<Esc>jo<Esc>k
