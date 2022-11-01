@@ -37,6 +37,9 @@ if has('persistent_undo')
   set undodir=$HOME/.vim/.undo
 endif   
 
+" Swap files
+set directory^=$HOME/.vim/tmp//
+
 " Built in Fuzzy finder
 set path+=**
 set wildmenu
@@ -57,7 +60,7 @@ inoremap {<CR> {<CR>}<Esc>O
 autocmd Filetype c inoremap " ""<++><Esc>F"i
 autocmd Filetype c vnoremap // :norm I//<CR>
 autocmd Filetype c set textwidth=0
-autocmd Filetype cpp set textwidth=0		" cpp is not C++ but C preprocessor
+autocmd Filetype cpp set textwidth=0		" cpp is not C++ but C *.h files
 autocmd Filetype vim set textwidth=0
 autocmd Filetype sh set textwidth=0
 autocmd FileType make set noexpandtab
