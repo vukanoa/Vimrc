@@ -105,8 +105,7 @@ nnoremap <F6> :%s/\s\+$//g<CR>
 " My weird mappings
 inoremap ,, <Esc>/<++><CR>"_c4l
 nnoremap <Leader>vim :vs ~/.vimrc<CR>
-vmap <leader>( "2di(<Esc>pa,,<Esc>
-vmap <leader>[ "3di[<Esc>pa,,<Esc>
 inoremap ,for <Esc>:read ~/.vim/for<CR>:set lazyredraw<CR>kddV3j=/<++><CR>"_c4l
 nnoremap <leader>in =a{
 nnoremap <leader>sp O<Esc>jo<Esc>k
+nnoremap <leader>cen :vs bla<CR><C-w>r40<C-w><<C-w>l
