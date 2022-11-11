@@ -109,3 +109,4 @@ inoremap ,for <Esc>:read ~/.vim/for<CR>:set lazyredraw<CR>kddV3j=/<++><CR>"_c4l
 nnoremap <leader>in =a{
 nnoremap <leader>sp O<Esc>jo<Esc>k
 nnoremap <leader>cen :vs bla<CR><C-w>r40<C-w><<C-w>l
+nnoremap ,ma <Esc>:read ~/.vim/makefile_skeleton<CR>kdd/<++><CR>"_c4l
