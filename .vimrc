@@ -105,9 +105,11 @@ nnoremap <F6> :%s/\s\+$//g<CR>
 " My weird mappings
 inoremap ,, <Esc>/<++><CR>"_c4l
 nnoremap <Leader>vim :vs ~/.vimrc<CR>
-inoremap ,for <Esc>:read ~/.vim/for<CR>:set lazyredraw<CR>kddV3j=/<++><CR>"_c4l
+inoremap ,for <Esc>:read ~/.vim/snippets/for<CR>:set lazyredraw<CR>kddV3j=/<++><CR>"_c4l
 nnoremap <leader>in =a{
 nnoremap <leader>sp O<Esc>jo<Esc>k
 nnoremap <leader>cen :vs bla<CR><C-w>r40<C-w><<C-w>l
-nnoremap ,ma <Esc>:read ~/.vim/makefile_skeleton<CR>kdd/<++><CR>"_c4l
-nnoremap ,gt <Esc>:read ~/.vim/makefile_git<CR>kdd
+nnoremap ,ma <Esc>:read ~/.vim/snippets/makefile_skeleton<CR>kdd/<++><CR>"_c4l
+nnoremap ,gt <Esc>:read ~/.vim/snippets/makefile_git<CR>kdd
+nnoremap ,es <Esc>:read ~/.vim/snippets/leetcode_easy<CR>/<++><CR>"_c4l
+nnoremap ,md <Esc>:read ~/.vim/snippets/leetcode_medium<CR>/<++><CR>"_c4l
