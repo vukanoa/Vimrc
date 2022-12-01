@@ -113,6 +113,8 @@ nnoremap ,ma <Esc>:read ~/.vim/snippets/makefile_skeleton<CR>kdd/<++><CR>"_c4l
 nnoremap ,gt <Esc>:read ~/.vim/snippets/makefile_git<CR>kdd
 nnoremap ,es <Esc>:read ~/.vim/snippets/leetcode_easy<CR>/<++><CR>"_c4l
 nnoremap ,md <Esc>:read ~/.vim/snippets/leetcode_medium<CR>/<++><CR>"_c4l
+nnoremap ,hd <Esc>:read ~/.vim/snippets/leetcode_hard<CR>/<++><CR>"_c4l
 nnoremap ,id <Esc>:read ~/.vim/snippets/leetcode_idea<CR>/<++><CR>"_c4l
 nnoremap ,com <Esc>:read ~/.vim/snippets/leetcode_complexity<CR>/<++><CR>"_c4l
 nnoremap ,cpp <Esc>:read ~/.vim/snippets/basic_cpp<CR>kdd/<++><CR>"_c4l
+nnoremap ,na <Esc>:read ~/.vim/snippets/problem_name<CR>kdd/<++><CR>"_c4l
