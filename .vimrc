@@ -35,7 +35,7 @@ highlight ColorColumn ctermbg=Black
 if has('persistent_undo')
   set undofile
   set undodir=$HOME/.vim/.undo
-endif   
+endif
 
 " Swap files
 set directory^=$HOME/.vim/tmp//
@@ -50,6 +50,9 @@ set splitbelow
 set undofile
 vnoremap p "_dP
 nnoremap Y v$hy
+" Make cursor a Bar instead of a Block in INSERT mode
+let &t_SI = "\e[6 q"
+let &t_EI = "\e[2 q"
 
 " Autoclosing
 inoremap ( ()<++><Esc>F)i
@@ -101,6 +104,9 @@ inoremap <C-BS> <C-\><C-o>db
 highlight ExtraWhitespace ctermbg=yellow
 nnoremap <F5> :match ExtraWhitespace /\s\+$/<CR>
 nnoremap <F6> :%s/\s\+$//g<CR>
+
+" Remove trailing whitespace on save
+autocmd BufWritePre * %s/\s\+$//e
 
 " My weird mappings
 inoremap ,, <Esc>/<++><CR>"_c4l
