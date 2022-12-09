@@ -11,6 +11,7 @@ set nocompatible
 set encoding=utf-8
 set number
 set relativenumber
+set guicursor=
 set incsearch
 set nohlsearch
 set tabstop=4
@@ -51,8 +52,8 @@ set undofile
 vnoremap p "_dP
 nnoremap Y v$hy
 " Make cursor a Bar instead of a Block in INSERT mode
-let &t_SI = "\e[6 q"
-let &t_EI = "\e[2 q"
+" let &t_SI = "\e[6 q"
+" let &t_EI = "\e[2 q"
 
 " Autoclosing
 inoremap ( ()<++><Esc>F)i
