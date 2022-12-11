@@ -45,6 +45,9 @@ set directory^=$HOME/.vim/tmp//
 set path+=**
 set wildmenu
 
+" Removes possibility to define function keys that start with <Esc>
+set noesckeys
+
 " Better than default
 set splitright
 set splitbelow
