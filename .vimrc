@@ -129,3 +129,5 @@ nnoremap ,id <Esc>:read ~/.vim/snippets/leetcode_idea<CR>/<++><CR>"_c4l
 nnoremap ,com <Esc>:read ~/.vim/snippets/leetcode_complexity<CR>/<++><CR>"_c4l
 nnoremap ,cpp <Esc>:read ~/.vim/snippets/basic_cpp<CR>kdd/<++><CR>"_c4l
 nnoremap ,na <Esc>:read ~/.vim/snippets/problem_name<CR>kdd/<++><CR>"_c4l
+nnoremap <Leader>p <Esc>:bprev<CR>
+nnoremap <Leader>n <Esc>:bnext<CR>
