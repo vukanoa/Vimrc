@@ -103,11 +103,6 @@ noremap! <C-h> <C-w>
 inoremap <C-w> <C-\><C-o>dB
 inoremap <C-BS> <C-\><C-o>db
 
-" Trailing White Space
-highlight ExtraWhitespace ctermbg=yellow
-nnoremap <F5> :match ExtraWhitespace /\s\+$/<CR>
-nnoremap <F6> :%s/\s\+$//g<CR>
-
 " Remove trailing whitespace on save
 autocmd BufWritePre * %s/\s\+$//e
 
