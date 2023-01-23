@@ -62,3 +62,27 @@ let mapleader="\<Space>"
 	defined. Changing "g:mapleader" after that has no effect for already
 	defined mappings.
 
+set nocompatible
+
+	Vim is a successor of a popular text editor named "Vi". Vi works a bit
+	different in some ways, but it is very similar. However if someone who is
+	familiar only with Vim, was to set this option it would feel like "Vim is
+	behaving strangely".
+
+	As it says in the help page:
+	This option has the effect of making Vim either more Vi-compatible, or
+	make Vim behave in a more useful way.
+
+	This is a special kind of option, because when it's set or reset,
+	other options are also changed as a side effect.
+	NOTE: Setting or resetting this option can have a lot of unexpected
+	effects: Mappings are interpreted in another way, undo behaves
+	differently, etc.  If you set this option in your vimrc file, you
+	should probably put it at the very start.
+
+	By default this option is on and the Vi defaults are used for the
+	options.  This default was chosen for those people who want to use Vim
+	just like Vi, and don't even (want to) know about the 'compatible'
+	option.
+
+	this option
