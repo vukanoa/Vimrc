@@ -84,5 +84,3 @@ set nocompatible
 	options.  This default was chosen for those people who want to use Vim
 	just like Vi, and don't even (want to) know about the 'compatible'
 	option.
-
-	this option
