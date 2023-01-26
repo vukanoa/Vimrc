@@ -3,6 +3,7 @@
 #Explanations for every feature in my Vimrc
 
 TODO: Detailed explanation of every feature
+
 (Some explanations are my own, some are from the help pages)
 
 syntax on
