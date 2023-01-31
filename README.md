@@ -86,3 +86,24 @@ set nocompatible
 	options.  This default was chosen for those people who want to use Vim
 	just like Vi, and don't even (want to) know about the 'compatible'
 	option.
+
+set encoding=utf-8
+
+	string (default for MS-Windows: "utf-8",
+	otherwise: value from $LANG or "latin1")
+
+	Sets the character encoding used inside Vim.  It applies to text in
+	the buffers, registers, Strings in expressions, text stored in the
+	viminfo file, etc.  It sets the kind of characters which Vim can work
+	with.  See |encoding-names| for the possible values.
+
+	Supported 'encoding' values are:
+		...
+		latin1   8-bit characters (ISO 8859-1, also used for cp1252)
+		utf-8    32 bit UTF-8 encoded Unicode (ISO/IEC 10646-1)
+		...
+
+	NOTE: Changing this option will not change the encoding of the
+	existing text in Vim.  It may cause non-ASCII text to become invalid.
+	It should normally be kept at its default value, or set when Vim
+	starts up.  See |multibyte|.  To reload the menus see |:menutrans|.
