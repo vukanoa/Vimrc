@@ -109,9 +109,11 @@ set encoding=utf-8
 	starts up.  See |multibyte|.  To reload the menus see |:menutrans|.
 
 set number
+
 	Show absolute line numbers.
 
 set relativenumber
+
 	Show line number relative to the current line. When combined with
 	"set number" the current line shows the absolute line number, while
 	others show relative to the current line.
