@@ -117,3 +117,10 @@ set relativenumber
 	Show line number relative to the current line. When combined with
 	"set number" the current line shows the absolute line number, while
 	others show relative to the current line.
+
+set incsearch
+
+	While typing a search command, show where the pattern, as it was typed
+	so far, matches. The matched string is highlighted. If the pattern
+	is invalid or not found, nothing is shown.  The screen will be updated
+	often, this is only useful on fast terminals.
