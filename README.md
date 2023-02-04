@@ -124,3 +124,25 @@ set incsearch
 	so far, matches. The matched string is highlighted. If the pattern
 	is invalid or not found, nothing is shown.  The screen will be updated
 	often, this is only useful on fast terminals.
+
+set nohlsearch
+
+	While typing the search pattern the current match will be shown if the
+	'incsearch' option is on.  Remember that you still have to finish the search
+	command with <CR> to actually position the cursor at the displayed match.  Or
+	use <Esc> to abandon the search.
+
+	All matches for the last used search pattern will be highlighted if you set
+	the 'hlsearch' option.  This can be suspended with the |:nohlsearch| command.
+
+set noexpandtab
+
+	Don't convert Tabs to Spaces. Let <Tab> be <Tab> not multiple <Space> characters.
+	This is the default behaviour, but I like to make it explicit.
+	In Insert mode: Use the appropriate number of spaces to insert a
+	<Tab>.  Spaces are used in indents with the '>' and '<' commands and
+	when 'autoindent' is on.  To insert a real tab when 'expandtab' is
+	on, use CTRL-V<Tab>.  See also |:retab| and |ins-expandtab|.
+	This option is reset when the 'paste' option is set and restored when
+	the 'paste' option is reset.
+	NOTE: This option is reset when 'compatible' is set.
