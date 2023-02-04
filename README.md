@@ -146,3 +146,25 @@ set noexpandtab
 	This option is reset when the 'paste' option is set and restored when
 	the 'paste' option is reset.
 	NOTE: This option is reset when 'compatible' is set.
+
+set ignorecase
+set smartcase
+
+	If the 'ignorecase' option is on, the case of normal letters is ignored.
+	'smartcase' can be set to ignore case when the pattern contains lowercase
+	letters only.
+								*/\c* */\C*
+	When "\c" appears anywhere in the pattern, the whole pattern is handled like
+	'ignorecase' is on.  The actual value of 'ignorecase' and 'smartcase' is
+	ignored.  "\C" does the opposite: Force matching case for the whole pattern.
+	{only Vim supports \c and \C}
+	Note that 'ignorecase', "\c" and "\C" are not used for the character classes.
+
+	Examples:
+	      pattern	'ignorecase'  'smartcase'	matches ~
+		foo	  off		-		foo
+		foo	  on		-		foo Foo FOO
+		Foo	  on		off		foo Foo FOO
+		Foo	  on		on		    Foo
+		\cfoo	  -		-		foo Foo FOO
+		foo\C	  -		-		foo
