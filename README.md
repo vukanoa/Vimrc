@@ -1,4 +1,76 @@
-# Vimrc
+        If the 'ignorecase' option is on, the case of normal letters is ignored.
+
+154
+
+        'smartcase' can be set to ignore case when the pattern contains lowercase
+
+155
+
+        letters only.
+
+156
+
+                                                                */\c* */\C*
+
+157
+
+        When "\c" appears anywhere in the pattern, the whole pattern is handled like
+
+158
+
+        'ignorecase' is on.  The actual value of 'ignorecase' and 'smartcase' is
+
+159
+
+        ignored.  "\C" does the opposite: Force matching case for the whole pattern.
+
+160
+
+        {only Vim supports \c and \C}
+
+161
+
+        Note that 'ignorecase', "\c" and "\C" are not used for the character classes.
+
+162
+
+​
+
+163
+
+        Examples:
+
+164
+
+              pattern   'ignorecase'  'smartcase'       matches ~
+
+165
+
+                foo       off           -               foo
+
+166
+
+                foo       on            -               foo Foo FOO
+
+167
+
+                Foo       on            off             foo Foo FOO
+
+168
+
+                Foo       on            on                  Foo
+
+169
+
+                \cfoo     -             -               foo Foo FOO
+
+170
+
+                foo\C     -             -               foo
+
+171
+
+​# Vimrc
 
 #Explanations for every feature in my Vimrc
 
@@ -146,6 +218,10 @@ set noexpandtab
 	This option is reset when the 'paste' option is set and restored when
 	the 'paste' option is reset.
 	NOTE: This option is reset when 'compatible' is set.
+
+set laststatus=0
+	
+	Never have a status line
 
 set ignorecase
 set smartcase
