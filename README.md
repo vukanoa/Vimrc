@@ -189,4 +189,39 @@ set wrap
                 :set listchars+=precedes:<,extends:>                            
 	See 'sidescroll', 'listchars' and |wrap-off|.    
 	
-	
+set linebreak
+	boolean (default off)
+	local to window
+	{not available when compiled without the |+linebreak| feature}
+	If on, Vim will wrap long lines at a character in 'breakat' rather
+	than at the last character that fits on the screen.  Unlike
+	'wrapmargin' and 'textwidth', this does not insert <EOL>s in the file,
+	it only affects the way the file is displayed, not its contents.
+	If 'breakindent' is set, line is visually indented. Then, the value
+	of 'showbreak' is used to put in front of wrapped lines. This option
+	is not used when the 'wrap' option is off.
+	Note that <Tab> characters after an <EOL> are mostly not displayed
+	with the right amount of white space.
+
+
+set textwidth=79
+
+	number (default 0)
+	local to buffer
+	Maximum width of text that is being inserted.  A longer line will be
+	broken after white space to get this width.  A zero value disables
+	this.
+	After 79th character, the line is broken.
+
+set colorcolumn=80
+
+	{not available when compiled without the |+syntax| feature}
+	'colorcolumn' is a comma-separated list of screen columns that are
+	highlighted with ColorColumn |hl-ColorColumn|.  Useful to align
+	text.  Will make screen redrawing slower.
+	Basically, a bar at 80th character. 79 characters are visible on
+	the line.
+
+highlight ColorColumn ctermbg=Black
+
+	Color of the bar described above.
