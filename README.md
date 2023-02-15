@@ -190,6 +190,7 @@ set wrap
 	See 'sidescroll', 'listchars' and |wrap-off|.    
 	
 set linebreak
+
 	boolean (default off)
 	local to window
 	{not available when compiled without the |+linebreak| feature}
