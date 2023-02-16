@@ -226,3 +226,7 @@ set colorcolumn=80
 highlight ColorColumn ctermbg=Black
 
 	Color of the bar described above.
+
+set noesckeys
+
+	Removes possibility to define function keys that start with <Esc>
