@@ -230,3 +230,15 @@ highlight ColorColumn ctermbg=Black
 set noesckeys
 
 	Removes possibility to define function keys that start with <Esc>
+
+set splitright
+
+	boolean	(default off)global
+	When on, splitting a window will put the new window right of the
+	current one. |:vsplit|
+
+set splitbelow
+
+	boolean	(default off) global
+	When on, splitting a window will put the new window below the current
+	one. |:split|
