@@ -247,22 +247,27 @@ vnoremap p "_dP
 
 	When I select some characters(i.e. I'm in VISUAL mode) and press 'p'
 	the commands that will be execued are the following: "_ d P
-	(What that does mean?) "_ is a "black hole" register and 'd' is a
-	command to delete. So it means that we're deleting what is currently
-	selected, but we don't want to leave that just deleted
-	characters(the ones we have selected) in register "" because currently
-	there resides the thing we want to paste with 'P'.
-	We use 'P', instead of 'p' (lowercase), to paste before.
+	(What that does mean?)
+	1. "_  => is a "black hole" register
+	2. d is a command to delete.
+	
+	So it means that we're deleting what is currently selected, but
+	we don't want to leave that just deleted
+	characters(the ones we have selected) in register "" because
+	currently there resides the thing we want to paste with 'P'.
+	
+	3. P => We use 'P', instead of 'p' (lowercase), to paste before.
+	
 	You can check the state of registers with :registers<CR>
 	Essentially this will just paste over the selected text.
 
 nnoremap Y v$hy
 
 	v $ h y
-	1. Go in VISUAL mode
-	2. Go to the end of the line(this will select everything from the character we
+	1. v ==> Go in VISUAL mode
+	2. $ ==> Go to the end of the line(this will select everything from the character we
 	   were previously on, until the very last character on the line which is \r
-	3. h - Move one character to the left(deselect the last character, that is \r
-	4. y - Yank. Copy the selected text in register ""
+	3. h ==> Move one character to the left(deselect the last character, that is \r
+	4. y ==> Yank. Copy the selected text in register ""
 	Essentially this makes 'Y' executed in NORMAL mode copy everything on the line
 	after the character we're currently on, including the character we're on.
