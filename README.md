@@ -271,3 +271,21 @@ nnoremap Y v$hy
 	4. y ==> Yank. Copy the selected text in register ""
 	Essentially this makes 'Y' executed in NORMAL mode copy everything on the line
 	after the character we're currently on, including the character we're on.
+
+inoremap ( ()<++><Esc>F)i
+inoremap [ []<++><Esc>F]i
+inoremap {<CR> {<CR>}<Esc>O
+	
+	First, let's unpack the command "inoremap".
+	i => while in INSERT mode
+	nore => don't do recursively commands if the one I use is already mapped
+	map => map the key-combination left of <Space>(which is a delimiter between "when I press" and "do these commands"
+	
+	1. When I press open parenthesis '(' I wanto you to write "()<++><Esc>F)i
+		Let's unpack it:
+			() - Open and close parentheses
+			<++> - I use this as a dummy "value" which I jump to(will be writen down there.
+			<Esc> - Exist INSERT mode and enter NORMAL mode
+			F) - From the character I'm currently on, search and jump to first found closed parenthesis ')'
+			i - Go in insert mode the character before closed parenthesis ')'. This enables us to write inside the parentheses.
+
