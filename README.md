@@ -289,3 +289,11 @@ inoremap {<CR> {<CR>}<Esc>O
 			F) - From the character I'm currently on, search and jump to first found closed parenthesis ')'
 			i - Go in insert mode the character before closed parenthesis ')'. This enables us to write inside the parentheses.
 
+autocmd Filetype c inoremap " ""<++><Esc>F"i
+
+	Let's unpack:
+	autocmd Filetype => Do this only for the type of files represented after the Space
+	c => C is the type of file we do this for
+	inoremap => In INSERT mode not recursively map 
+	" => When we press " do things after <Space>
+	""<++><Esc>F"i
