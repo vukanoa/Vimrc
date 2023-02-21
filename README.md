@@ -284,8 +284,8 @@ inoremap {<CR> {<CR>}<Esc>O
 	1. When I press open parenthesis '(' I wanto you to write "()<++><Esc>F)i
 		Let's unpack it:
 			() - Open and close parentheses
-			<++> - I use this as a dummy "value" which I jump to(will be writen down there.
-			<Esc> - Exist INSERT mode and enter NORMAL mode
+			<++> - I use this as a dummy "value" which I jump to with a shortcut(will be writen down there).
+			<Esc> - Exit INSERT mode and enter NORMAL mode
 			F) - From the character I'm currently on, search and jump to first found closed parenthesis ')'
 			i - Go in insert mode the character before closed parenthesis ')'. This enables us to write inside the parentheses.
 
@@ -295,5 +295,18 @@ autocmd Filetype c inoremap " ""<++><Esc>F"i
 	autocmd Filetype => Do this only for the type of files represented after the Space
 	c => C is the type of file we do this for
 	inoremap => In INSERT mode not recursively map 
-	" => When we press " do things after <Space>
+	" => When we press " do things(below listed) that are written after the <Space> character.
 	""<++><Esc>F"i
+		Okay let's unpack this:
+			"" - Open and close quotes
+			<++> - I use this as a dummy "value" which I jump to with a shortcut(will be written down there).
+			<Esc> - Exist INSERT mode and enter NORMAL mode
+			F" - From the character I'm currently on, search and jump to first found closed quote '"'
+			i - Go in insert mode the character before closed quote '"'. This enables us to write inside the quotes.
+	
+	Summary:
+		Only in .c files and I type "
+		(while being in INSERT MODE)
+		The following will be written:
+			""<++>
+		And I will be in INSERT mode inside the quotes.
