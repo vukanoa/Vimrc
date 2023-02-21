@@ -285,7 +285,7 @@ inoremap {<CR> {<CR>}<Esc>O
 		Let's unpack it:
 			() - Open and close parentheses
 			<++> - I use this as a dummy "value" which I jump to with a shortcut(will be writen down there).
-			<Esc> - Exit INSERT mode and enter NORMAL mode
+			<Esc> - Exit INSERT mode and enter NORMAL mode(It's a SINGLE, Escape, character not a sequence of characters: '<' 'E' 's' 'c' '>')
 			F) - From the character I'm currently on, search and jump to first found closed parenthesis ')'
 			i - Go in insert mode the character before closed parenthesis ')'. This enables us to write inside the parentheses.
 
@@ -300,7 +300,7 @@ autocmd Filetype c inoremap " ""<++><Esc>F"i
 		Okay let's unpack this:
 			"" - Open and close quotes
 			<++> - I use this as a dummy "value" which I jump to with a shortcut(will be written down there).
-			<Esc> - Exist INSERT mode and enter NORMAL mode
+			<Esc> - Exist INSERT mode and enter NORMAL mode(It's a SINGLE, Escape, character not a sequence of characters: '<' 'E' 's' 'c' '>')
 			F" - From the character I'm currently on, search and jump to first found closed quote '"'
 			i - Go in insert mode the character before closed quote '"'. This enables us to write inside the quotes.
 	
