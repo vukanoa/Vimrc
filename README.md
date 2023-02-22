@@ -310,3 +310,11 @@ autocmd Filetype c inoremap " ""<++><Esc>F"i
 		The following will be written:
 			""<++>
 		And I will be in INSERT mode inside the quotes.
+
+autocmd Filetype c set textwidth=0
+autocmd Filetype cpp set textwidth=0		" cpp is both C++ and C *.h files
+autocmd Filetype vim set textwidth=0
+autocmd Filetype sh set textwidth=0
+
+	Make sure the text doesn't wrap after 79 characters(previously set above) for Files of type: C, C++, vim(this is .vimrc file), Shell Scripts
+	For example, when you're writing a C/C++ code, and a function exceeds 79 characters, you don't want it to wrap. Just continue on the same line.
