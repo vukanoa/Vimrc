@@ -321,3 +321,7 @@ autocmd Filetype sh set textwidth=0
 
 	Make sure the text doesn't wrap after 79 characters(previously set above) for Files of type: C, C++, vim(this is .vimrc file), Shell Scripts
 	For example, when you're writing a C/C++ code, and a function exceeds 79 characters, you don't want it to wrap. Just continue on the same line.
+
+autocmd FileType make set noexpandtab
+
+	Only for Files of type: "make"(Makefiles), do not convert tabs to spaces since Makefile requires <Tab> character to be able to work properly.
