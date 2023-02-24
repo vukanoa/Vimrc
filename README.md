@@ -325,3 +325,22 @@ autocmd Filetype sh set textwidth=0
 autocmd FileType make set noexpandtab
 
 	Only for Files of type: "make"(Makefiles), do not convert tabs to spaces since Makefile requires <Tab> character to be able to work properly.
+
+nnoremap <C-d> <C-d>M
+
+nnoremap <C-u> <C-u>M
+
+	1) nnoremap
+		n - While in NORMAL mode
+		nore - Don't execute this command recursively if another thing is mapped to this "result"(thing after the <Space>)
+		map - When I press the command left of the <Space> char do the thing after the <Space>
+		
+	2) <C-d>
+		This means: CTRL + d
+		(It's literally CTRL d, you don't press '+', '-' or anything else)
+
+	3) <C-d>M
+		This will happen.
+		<C-d> - moves the screen down by half of the page
+		M - Puts the cursor in the middle-th row of the current screen
+	
