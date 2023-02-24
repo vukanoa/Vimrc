@@ -328,7 +328,7 @@ autocmd FileType make set noexpandtab
 
 nnoremap <C-d> <C-d>M
 
-nnoremap <C-u> <C-u>M
+nnoremap <C-d> <C-u>M
 
 	1) nnoremap
 		n - While in NORMAL mode
@@ -343,4 +343,3 @@ nnoremap <C-u> <C-u>M
 		This will happen.
 		<C-d> - moves the screen down by half of the page
 		M - Puts the cursor in the middle-th row of the current screen
-	
