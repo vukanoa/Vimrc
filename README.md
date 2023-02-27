@@ -283,11 +283,15 @@ inoremap {<CR> {<CR>}<Esc>O
 	
 	1. When I press open parenthesis '(' I wanto you to write "()<++><Esc>F)i
 		Let's unpack it:
-			() - Open and close parentheses
-			<++> - I use this as a dummy "value" which I jump to with a shortcut(will be writen down there).
-			<Esc> - Exit INSERT mode and enter NORMAL mode(It's a SINGLE, Escape, character not a sequence of characters: '<' 'E' 's' 'c' '>')
-			F) - From the character I'm currently on, search and jump to first found closed parenthesis ')'
-			i - Go in insert mode the character before closed parenthesis ')'. This enables us to write inside the parentheses.
+			()    - Open and close parentheses
+			<++>  - I use this as a dummy "value" which I jump to with a shortcut(will be
+				writen down there).
+			<Esc> - Exit INSERT mode and enter NORMAL mode(It's a SINGLE, Escape, character
+				not a sequence of characters: '<' 'E' 's' 'c' '>')
+			F)    - From the character I'm currently on, search and jump to first found
+				closed parenthesis ')'
+			i     - Go in insert mode the character before closed parenthesis ')'. This
+				enables us to write inside the parentheses.
 
 autocmd Filetype c inoremap " ""<++><Esc>F"i
 
@@ -299,10 +303,14 @@ autocmd Filetype c inoremap " ""<++><Esc>F"i
 	""<++><Esc>F"i
 		Okay let's unpack this:
 			"" - Open and close quotes
-			<++> - I use this as a dummy "value" which I jump to with a shortcut(will be written down there).
-			<Esc> - Exist INSERT mode and enter NORMAL mode(It's a SINGLE, Escape, character not a sequence of characters: '<' 'E' 's' 'c' '>')
-			F" - From the character I'm currently on, search and jump to first found closed quote '"'
-			i - Go in insert mode the character before closed quote '"'. This enables us to write inside the quotes.
+			<++>  - I use this as a dummy "value" which I jump to with a shortcut(will be
+			        written down there).
+			<Esc> - Exist INSERT mode and enter NORMAL mode(It's a SINGLE, Escape, character
+				not a sequence of characters: '<' 'E' 's' 'c' '>')
+			F"    - From the character I'm currently on, search and jump to first found
+				closed quote '"'
+			i     - Go in insert mode the character before closed quote '"'. This enables us to
+			      write inside the quotes.
 	
 	Summary:
 		Only in .c files and I type "
@@ -319,21 +327,27 @@ autocmd Filetype vim set textwidth=0
 
 autocmd Filetype sh set textwidth=0
 
-	Make sure the text doesn't wrap after 79 characters(previously set above) for Files of type: C, C++, vim(this is .vimrc file), Shell Scripts
-	For example, when you're writing a C/C++ code, and a function exceeds 79 characters, you don't want it to wrap. Just continue on the same line.
+	Make sure the text doesn't wrap after 79 characters(previously set above) for Files of type: C,
+	C++, vim(this is .vimrc file), Shell Scripts.
+
+	For example, when you're writing a C/C++ code, and a function exceeds 79 characters, you don't
+	want it to wrap. Just continue on the same line.
 
 autocmd FileType make set noexpandtab
 
-	Only for Files of type: "make"(Makefiles), do not convert tabs to spaces since Makefile requires <Tab> character to be able to work properly.
+	Only for Files of type: "make"(Makefiles), do not convert tabs to spaces since Makefile
+	requires <Tab> character to be able to work properly.
 
-nnoremap <C-d> <C-d>M
+nnoremap <C - d> <C - d>M
 
-nnoremap <C-d> <C-u>M
+nnoremap <C - d> <C - u>M
 
 	1) nnoremap
-		n - While in NORMAL mode
-		nore - Don't execute this command recursively if another thing is mapped to this "result"(thing after the <Space>)
-		map - When I press the command left of the <Space> char do the thing after the <Space>
+		n    - While in NORMAL mode
+		nore - Don't execute this command recursively if another thing is mapped to this
+		       "result"(thing after the <Space>)
+		map  - When I press the command left of the <Space> char do the thing after
+		       the <Space>
 		
 	2) <C-d>
 		This means: CTRL + d
