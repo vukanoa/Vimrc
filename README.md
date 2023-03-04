@@ -264,11 +264,11 @@ vnoremap p "_dP
 nnoremap Y v$hy
 
 	v $ h y
-	1. v ==> Go in VISUAL mode
-	2. $ ==> Go to the end of the line(this will select everything from the character we
-	   were previously on, until the very last character on the line which is \r
-	3. h ==> Move one character to the left(deselect the last character, that is \r
-	4. y ==> Yank. Copy the selected text in register ""
+	1. v - Go in VISUAL mode
+	2. $ - Go to the end of the line(this will select everything from the character we
+	       were previously on, until the very last character on the line which is \r
+	3. h - Move one character to the left(deselect the last character, that is \r
+	4. y - Yank. Copy the selected text in register ""
 	Essentially this makes 'Y' executed in NORMAL mode copy everything on the line
 	after the character we're currently on, including the character we're on.
 
