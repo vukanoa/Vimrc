@@ -279,7 +279,7 @@ inoremap {<CR> {<CR>}<Esc>O
 	First, let's unpack the command "inoremap".
 	i => while in INSERT mode
 	nore => don't do recursively commands if the one I use is already mapped
-	map => map the key-combination left of <Space>(which is a delimiter between "when I press" and "do these commands"
+	map => map the key-combination left of <Space>(which is a delimiter between "when I press" and "do these commands")
 	
 	1. When I press open parenthesis '(' I wanto you to write "()<++><Esc>F)i
 		Let's unpack it:
@@ -357,3 +357,25 @@ nnoremap <C - d> <C - u>M
 		This will happen.
 		<C-d> - moves the screen down by half of the page
 		M - Puts the cursor in the middle-th row of the current screen
+
+
+" Windows jumping
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+		
+	First, let's unpack the command "nnoremap".
+	n => while in NORMAL mode
+	nore => don't do recursively commands if the one I use is already mapped to something else
+	map => map the key-combination left of <Space>(which is a delimiter between "when I press" and "do these commands")
+	
+	When I press <C-h> I want you to do <C-w>h
+		What does <C-w>h do?
+			That's a built-in function in Vim. It jumps to the window that is LEFT of the current one.
+	
+	h - LEFT
+	j - DOWN
+	k - UP
+	l - RIGHT
