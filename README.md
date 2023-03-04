@@ -288,8 +288,8 @@ inoremap {<CR> {<CR>}<Esc>O
 				writen down there).
 			<Esc> - Exit INSERT mode and enter NORMAL mode(It's a SINGLE, Escape, character
 				not a sequence of characters: '<' 'E' 's' 'c' '>')
-			F)    - From the character I'm currently on, search and jump to first found
-				closed parenthesis ')'
+			F)    - From the character I'm currently on, search BACKWARDS and jump to first
+				found closed parenthesis ')'
 			i     - Go in insert mode the character before closed parenthesis ')'. This
 				enables us to write inside the parentheses.
 
