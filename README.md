@@ -379,3 +379,26 @@ nnoremap <C-l> <C-w>l
 	j - DOWN
 	k - UP
 	l - RIGHT
+
+
+" Windows resizing while split
+noremap <leader>h 10<C-w>>
+noremap <leader>l 10<C-w><
+
+	noremap is explained above.
+	<leader> - For me this is a <Space> character
+	
+	So, when I press:
+		<Space>h
+	while I have opened more than one window in current buffer, then do this:
+		10<C-w>>
+	
+	Let's unpack:
+		10    - This many times repeat the following sequence
+		<C-w> - Litteraly pressing CTRL w    // <C-w> is a command you type before doing anything with windows.
+		>     - Shift the window to the right(this shifts window ONLY because we have used <C-w> before '>',
+		        otherwise would just shift the current line to right by 10 * shiftwidth
+	
+	It's the same for '<' but only move Window to the left instead of right.
+	
+	
