@@ -382,8 +382,9 @@ nnoremap <C-l> <C-w>l
 
 
 " Windows resizing while split
-noremap <leader>h 10<C-w>>
-noremap <leader>l 10<C-w><
+noremap <leader>h 10<C-w> >
+			
+noremap <leader>l 10<C-w> <
 
 	noremap is explained above.
 	<leader> - For me this is a <Space> character
