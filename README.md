@@ -381,7 +381,6 @@ nnoremap <C-l> <C-w>l
 	l - RIGHT
 
 
-" Windows resizing while split
 noremap <leader>h 10<C-w> >
 			
 noremap <leader>l 10<C-w> <
@@ -401,5 +400,3 @@ noremap <leader>l 10<C-w> <
 		        otherwise would just shift the current line to right by 10 * shiftwidth
 	
 	It's the same for '<' but only move Window to the left instead of right.
-	
-	
