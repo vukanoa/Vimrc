@@ -360,10 +360,10 @@ nnoremap <C - d> <C - u>M
 
 
 " Windows jumping
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
+nnoremap <C - h>   <C - w> h
+nnoremap <C - j>   <C - w> j
+nnoremap <C - k>   <C - w> k
+nnoremap <C - l>   <C - w> l
 
 		
 	First, let's unpack the command "nnoremap".
@@ -381,9 +381,9 @@ nnoremap <C-l> <C-w>l
 	l - RIGHT
 
 
-noremap <leader>h 10<C-w> >
+noremap <leader> h   10 <C - w> >
 			
-noremap <leader>l 10<C-w> <
+noremap <leader> l   10 <C - w> <
 
 	noremap is explained above.
 	<leader> - For me this is a <Space> character
