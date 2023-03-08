@@ -381,9 +381,9 @@ nnoremap <C - l>   <C - w> l
 	l - RIGHT
 
 
-#noremap < leader > h       10 <C - w> >
+### noremap < leader > h       10 <C - w> >
 			
-##noremap < leader > l       10 <C - w> <
+## noremap < leader > l       10 <C - w> <
 
 	noremap is explained above.
 	<leader> - For me this is a <Space> character
