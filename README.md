@@ -1,12 +1,12 @@
 # Vimrc
 
-#Explanations for every feature in my Vimrc
+## Explanations for every feature in my Vimrc
 
 TODO: Detailed explanation of every feature
 
 (Some explanations are my own, some are from the help pages)
 
-syntax on
+### syntax on
 
 	Syntax highlighting enables Vim to show parts of the text in another font
 	or color. Those parts can be specific keywords or text matching a pattern.
@@ -14,12 +14,12 @@ syntax on
 	Syntax highlighting is not available when the |+syntax| feature has been
 	disabled at compile time.
 
-set bg=dark
+### set bg=dark
 
 	sets the Backgorund base color to be dark. Colorschemes work on top of
 	this color.
 
-colorscheme gruvbox
+### colorscheme gruvbox
 
 	Vim reads files from the output of command: "set runtimepath" in that
 	order.
@@ -41,7 +41,7 @@ colorscheme gruvbox
 	instead of the previous:
 		usr/local/share/vim/vim90/colors/gruvbox.vim
 
-let mapleader="\<Space>"
+### let mapleader="\<Space>"
 
 	Map a leader key inside a Vim session. It can be used to map custom
 	shortcuts.
@@ -64,7 +64,7 @@ let mapleader="\<Space>"
 	defined. Changing "g:mapleader" after that has no effect for already
 	defined mappings.
 
-set nocompatible
+### set nocompatible
 
 	Vim is a successor of a popular text editor named "Vi". Vi works a bit
 	different in some ways, but it is very similar. However if someone who is
@@ -87,7 +87,7 @@ set nocompatible
 	just like Vi, and don't even (want to) know about the 'compatible'
 	option.
 
-set encoding=utf-8
+### set encoding=utf-8
 
 	string (default for MS-Windows: "utf-8",
 	otherwise: value from $LANG or "latin1")
@@ -108,24 +108,24 @@ set encoding=utf-8
 	It should normally be kept at its default value, or set when Vim
 	starts up.  See |multibyte|.  To reload the menus see |:menutrans|.
 
-set number
+### set number
 
 	Show absolute line numbers.
 
-set relativenumber
+### set relativenumber
 
 	Show line number relative to the current line. When combined with
 	"set number" the current line shows the absolute line number, while
 	others show relative to the current line.
 
-set incsearch
+### set incsearch
 
 	While typing a search command, show where the pattern, as it was typed
 	so far, matches. The matched string is highlighted. If the pattern
 	is invalid or not found, nothing is shown.  The screen will be updated
 	often, this is only useful on fast terminals.
 
-set nohlsearch
+### set nohlsearch
 
 	While typing the search pattern the current match will be shown if the
 	'incsearch' option is on.  Remember that you still have to finish the search
@@ -135,7 +135,7 @@ set nohlsearch
 	All matches for the last used search pattern will be highlighted if you set
 	the 'hlsearch' option.  This can be suspended with the |:nohlsearch| command.
 
-set noexpandtab
+### set noexpandtab
 
 	Don't convert Tabs to Spaces. Let <Tab> be <Tab> not multiple <Space> characters.
 	This is the default behaviour, but I like to make it explicit.
@@ -147,12 +147,12 @@ set noexpandtab
 	the 'paste' option is reset.
 	NOTE: This option is reset when 'compatible' is set.
 
-set laststatus=0
+### set laststatus=0
 	
 	Never have a status line
 
-set ignorecase
-set smartcase
+### set ignorecase
+### set smartcase
 
 	If the 'ignorecase' option is on, the case of normal letters is ignored.
 	'smartcase' can be set to ignore case when the pattern contains lowercase
@@ -173,7 +173,7 @@ set smartcase
 		\cfoo	  -		-		foo Foo FOO
 		foo\C	  -		-		foo
 
-set wrap
+### set wrap
 	
 	This option changes how text is displayed.  It doesn't change the text  
         in the buffer, see 'textwidth' for that.                                
@@ -189,7 +189,7 @@ set wrap
                 :set listchars+=precedes:<,extends:>                            
 	See 'sidescroll', 'listchars' and |wrap-off|.    
 	
-set linebreak
+### set linebreak
 
 	boolean (default off)
 	local to window
@@ -205,7 +205,7 @@ set linebreak
 	with the right amount of white space.
 
 
-set textwidth=79
+### set textwidth=79
 
 	number (default 0)
 	local to buffer
@@ -214,7 +214,7 @@ set textwidth=79
 	this.
 	After 79th character, the line is broken.
 
-set colorcolumn=80
+### set colorcolumn=80
 
 	{not available when compiled without the |+syntax| feature}
 	'colorcolumn' is a comma-separated list of screen columns that are
@@ -223,27 +223,27 @@ set colorcolumn=80
 	Basically, a bar at 80th character. 79 characters are visible on
 	the line.
 
-highlight ColorColumn ctermbg=Black
+### highlight ColorColumn ctermbg=Black
 
 	Color of the bar described above.
 
-set noesckeys
+### set noesckeys
 
 	Removes possibility to define function keys that start with <Esc>
 
-set splitright
+### set splitright
 
 	boolean	(default off)global
 	When on, splitting a window will put the new window right of the
 	current one. |:vsplit|
 
-set splitbelow
+### set splitbelow
 
 	boolean	(default off) global
 	When on, splitting a window will put the new window below the current
 	one. |:split|
 
-vnoremap p "_dP
+### vnoremap p "_dP
 
 	When I select some characters(i.e. I'm in VISUAL mode) and press 'p'
 	the commands that will be execued are the following: "_ d P
@@ -261,7 +261,7 @@ vnoremap p "_dP
 	You can check the state of registers with :registers<CR>
 	Essentially this will just paste over the selected text.
 
-nnoremap Y v$hy
+### nnoremap Y v$hy
 
 	v $ h y
 	1. v - Go in VISUAL mode
@@ -272,9 +272,9 @@ nnoremap Y v$hy
 	Essentially this makes 'Y' executed in NORMAL mode copy everything on the line
 	after the character we're currently on, including the character we're on.
 
-inoremap ( ()<++><Esc>F)i
-inoremap [ []<++><Esc>F]i
-inoremap {<CR> {<CR>}<Esc>O
+### inoremap ( ()<++><Esc>F)i
+### inoremap [ []<++><Esc>F]i
+### inoremap {<CR> {<CR>}<Esc>O
 	
 	First, let's unpack the command "inoremap".
 	i => while in INSERT mode
@@ -293,7 +293,7 @@ inoremap {<CR> {<CR>}<Esc>O
 			i     - Go in insert mode the character before closed parenthesis ')'. This
 				enables us to write inside the parentheses.
 
-autocmd Filetype c inoremap " ""<++><Esc>F"i
+### autocmd Filetype c inoremap " ""<++><Esc>F"i
 
 	Let's unpack:
 	autocmd Filetype => Do this only for the type of files represented after the Space
@@ -319,13 +319,13 @@ autocmd Filetype c inoremap " ""<++><Esc>F"i
 			""<++>
 		And I will be in INSERT mode inside the quotes.
 
-autocmd Filetype c set textwidth=0
+### autocmd Filetype c set textwidth=0
 
-autocmd Filetype cpp set textwidth=0		" cpp is both C++ and C *.h files
+### autocmd Filetype cpp set textwidth=0		" cpp is both C++ and C *.h files
 
-autocmd Filetype vim set textwidth=0
+### autocmd Filetype vim set textwidth=0
 
-autocmd Filetype sh set textwidth=0
+### autocmd Filetype sh set textwidth=0
 
 	Make sure the text doesn't wrap after 79 characters(previously set above) for Files of type: C,
 	C++, vim(this is .vimrc file), Shell Scripts.
@@ -333,14 +333,14 @@ autocmd Filetype sh set textwidth=0
 	For example, when you're writing a C/C++ code, and a function exceeds 79 characters, you don't
 	want it to wrap. Just continue on the same line.
 
-autocmd FileType make set noexpandtab
+### autocmd FileType make set noexpandtab
 
 	Only for Files of type: "make"(Makefiles), do not convert tabs to spaces since Makefile
 	requires <Tab> character to be able to work properly.
 
-nnoremap <C - d> <C - d>M
+### nnoremap <C - d> <C - d>M
 
-nnoremap <C - d> <C - u>M
+### nnoremap <C - d> <C - u>M
 
 	1) nnoremap
 		n    - While in NORMAL mode
@@ -359,11 +359,10 @@ nnoremap <C - d> <C - u>M
 		M - Puts the cursor in the middle-th row of the current screen
 
 
-" Windows jumping
-nnoremap <C - h>   <C - w> h
-nnoremap <C - j>   <C - w> j
-nnoremap <C - k>   <C - w> k
-nnoremap <C - l>   <C - w> l
+### nnoremap <C - h>   <C - w> h
+### nnoremap <C - j>   <C - w> j
+### nnoremap <C - k>   <C - w> k
+### nnoremap <C - l>   <C - w> l
 
 		
 	First, let's unpack the command "nnoremap".
@@ -383,7 +382,7 @@ nnoremap <C - l>   <C - w> l
 
 ### noremap < leader > h       10 <C - w> >
 			
-## noremap < leader > l       10 <C - w> <
+### noremap < leader > l       10 <C - w> <
 
 	noremap is explained above.
 	<leader> - For me this is a <Space> character
