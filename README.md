@@ -380,7 +380,7 @@ TODO: Detailed explanation of every feature
 	l - RIGHT
 
 
-### noremap <leader>h 10 <C-w>>
+### noremap <Leader>h 10 <C-w>>
 			
 ### noremap < leader > l       10 <C - w> <
 
