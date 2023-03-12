@@ -263,12 +263,12 @@ TODO: Detailed explanation of every feature
 
 ### nnoremap Y v$hy
 
-	v $ h y
 	1. v - Go in VISUAL mode
 	2. $ - Go to the end of the line(this will select everything from the character we
 	       were previously on, until the very last character on the line which is \r
 	3. h - Move one character to the left(deselect the last character, that is \r
 	4. y - Yank. Copy the selected text in register ""
+
 	Essentially this makes 'Y' executed in NORMAL mode copy everything on the line
 	after the character we're currently on, including the character we're on.
 
@@ -320,11 +320,8 @@ TODO: Detailed explanation of every feature
 		And I will be in INSERT mode inside the quotes.
 
 ### autocmd Filetype c set textwidth=0
-
 ### autocmd Filetype cpp set textwidth=0		" cpp is both C++ and C *.h files
-
 ### autocmd Filetype vim set textwidth=0
-
 ### autocmd Filetype sh set textwidth=0
 
 	Make sure the text doesn't wrap after 79 characters(previously set above) for Files of type: C,
@@ -338,9 +335,9 @@ TODO: Detailed explanation of every feature
 	Only for Files of type: "make"(Makefiles), do not convert tabs to spaces since Makefile
 	requires <Tab> character to be able to work properly.
 
-### nnoremap <C - d> <C - d>M
+### nnoremap \<C-d> \<C-d>M
 
-### nnoremap <C - d> <C - u>M
+### nnoremap \<C-d> \<C-u>M
 
 	1) nnoremap
 		n    - While in NORMAL mode
@@ -359,10 +356,10 @@ TODO: Detailed explanation of every feature
 		M - Puts the cursor in the middle-th row of the current screen
 
 
-### nnoremap <C - h>   <C - w> h
-### nnoremap <C - j>   <C - w> j
-### nnoremap <C - k>   <C - w> k
-### nnoremap <C - l>   <C - w> l
+### nnoremap \<C-h> \<C-w> h
+### nnoremap \<C-j> \<C-w> j
+### nnoremap \<C-k> \<C-w> k
+### nnoremap \<C-l> \<C-w> l
 
 		
 	First, let's unpack the command "nnoremap".
