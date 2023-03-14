@@ -279,7 +279,8 @@ TODO: Detailed explanation of every feature
 	First, let's unpack the command "inoremap".
 	i => while in INSERT mode
 	nore => don't do recursively commands if the one I use is already mapped
-	map => map the key-combination left of <Space>(which is a delimiter between "when I press" and "do these commands")
+	map => map the key-combination left of <Space>(which is a delimiter between "when I press" and
+	       "do these commands")
 	
 	1. When I press open parenthesis '(' I wanto you to write "()<++><Esc>F)i
 		Let's unpack it:
@@ -320,7 +321,7 @@ TODO: Detailed explanation of every feature
 		And I will be in INSERT mode inside the quotes.
 
 ### autocmd Filetype c set textwidth=0
-### autocmd Filetype cpp set textwidth=0		" cpp is both C++ and C *.h files
+### autocmd Filetype cpp set textwidth=0 " cpp is both C++ and C *.h files
 ### autocmd Filetype vim set textwidth=0
 ### autocmd Filetype sh set textwidth=0
 
@@ -336,7 +337,6 @@ TODO: Detailed explanation of every feature
 	requires <Tab> character to be able to work properly.
 
 ### nnoremap \<C-d> \<C-d>M
-
 ### nnoremap \<C-d> \<C-u>M
 
 	1) nnoremap
@@ -365,11 +365,13 @@ TODO: Detailed explanation of every feature
 	First, let's unpack the command "nnoremap".
 	n => while in NORMAL mode
 	nore => don't do recursively commands if the one I use is already mapped to something else
-	map => map the key-combination left of <Space>(which is a delimiter between "when I press" and "do these commands")
+	map => map the key-combination left of <Space>(which is a delimiter between "when I press" and
+	       "do these commands")
 	
 	When I press <C-h> I want you to do <C-w>h
 		What does <C-w>h do?
-			That's a built-in function in Vim. It jumps to the window that is LEFT of the current one.
+			That's a built-in function in Vim. It jumps to the window that is LEFT of the
+			current one.
 	
 	h - LEFT
 	j - DOWN
@@ -377,9 +379,8 @@ TODO: Detailed explanation of every feature
 	l - RIGHT
 
 
-### noremap \<Leader>h 10\<C-w>>
-			
-### noremap \<leader>l 10\<C-w>\<
+### noremap \<Leader>h 10\<C-w>>		
+### noremap \<Leader>l 10\<C-w>\<
 
 	noremap is explained above.
 	<leader> - For me this is a <Space> character
@@ -391,8 +392,10 @@ TODO: Detailed explanation of every feature
 	
 	Let's unpack:
 		10    - This many times repeat the following sequence
-		<C-w> - Litteraly pressing CTRL w    // <C-w> is a command you type before doing anything with windows.
-		>     - Shift the window to the right(this shifts window ONLY because we have used <C-w> before '>',
-		        otherwise would just shift the current line to right by 10 * shiftwidth
+		<C-w> - Litteraly pressing CTRL w    // <C-w> is a command you type before doing
+		        anything with windows.
+		>     - Shift the window to the right(this shifts window ONLY because we have
+		        used <C-w> before '>', otherwise would just shift the current line to
+			right by 10 * shiftwidth
 	
 	It's the same for '<' but only move Window to the left instead of right.
