@@ -77,6 +77,7 @@ TODO: Detailed explanation of every feature
 
 	This is a special kind of option, because when it's set or reset,
 	other options are also changed as a side effect.
+
 	NOTE: Setting or resetting this option can have a lot of unexpected
 	effects: Mappings are interpreted in another way, undo behaves
 	differently, etc.  If you set this option in your vimrc file, you
@@ -139,12 +140,17 @@ TODO: Detailed explanation of every feature
 
 	Don't convert Tabs to Spaces. Let <Tab> be <Tab> not multiple <Space> characters.
 	This is the default behaviour, but I like to make it explicit.
+
 	In Insert mode: Use the appropriate number of spaces to insert a
 	<Tab>.  Spaces are used in indents with the '>' and '<' commands and
-	when 'autoindent' is on.  To insert a real tab when 'expandtab' is
-	on, use CTRL-V<Tab>.  See also |:retab| and |ins-expandtab|.
+	when 'autoindent' is on.
+	
+	To insert a real tab when 'expandtab' is on, use CTRL-V<Tab>.
+	See also |:retab| and |ins-expandtab|.
+	
 	This option is reset when the 'paste' option is set and restored when
 	the 'paste' option is reset.
+
 	NOTE: This option is reset when 'compatible' is set.
 
 ### set laststatus=0
