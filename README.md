@@ -410,3 +410,13 @@ TODO: Detailed explanation of every feature
 			right by 10 * shiftwidth
 	
 	It's the same for '<' but only move Window to the left instead of right.
+
+### Disable Arrows keys  
+
+```
+for key in ['<Up>', '<Down>', '<Left>', '<Right>']
+	exec 'noremap' key '<Nop>'
+	exec 'inoremap' key '<Nop>'
+	exec 'vnoremap' key '<Nop>'
+endfor
+```
