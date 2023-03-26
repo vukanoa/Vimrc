@@ -411,6 +411,8 @@ TODO: Detailed explanation of every feature
 	
 	It's the same for '<' but only move Window to the left instead of right.
 
+### Disable Arrows Keys
+
 ```vimscript
 for key in ['<Up>', '<Down>', '<Left>', '<Right>']
 	exec 'noremap' key '<Nop>'
@@ -419,12 +421,10 @@ for key in ['<Up>', '<Down>', '<Left>', '<Right>']
 endfor
 ```
 
-	Disable Arrows Keys
-
-###noremap! <C-BS> <C-w>
-###noremap! <C-h> <C-w>
-###inoremap <C-w> <C-\\><C-o>dB
-###inoremap <C-BS> <C-\\><C-o>db
+### noremap! <C-BS> <C-w>
+### noremap! <C-h> <C-w>
+### inoremap <C-w> <C-\\><C-o>dB
+### inoremap <C-BS> <C-\\><C-o>db
 
 	It makes Control+BackSpace delete a whole word as in any other place you tybe.
 
