@@ -411,12 +411,39 @@ TODO: Detailed explanation of every feature
 	
 	It's the same for '<' but only move Window to the left instead of right.
 
-### Disable Arrows keys  
-
-```
+```vimscript
 for key in ['<Up>', '<Down>', '<Left>', '<Right>']
 	exec 'noremap' key '<Nop>'
 	exec 'inoremap' key '<Nop>'
 	exec 'vnoremap' key '<Nop>'
 endfor
 ```
+
+	Disable Arrows Keys
+
+###noremap! <C-BS> <C-w>
+###noremap! <C-h> <C-w>
+###inoremap <C-w> <C-\\><C-o>dB
+###inoremap <C-BS> <C-\\><C-o>db
+
+	It makes Control+BackSpace delete a whole word as in any other place you tybe.
+
+	First of all: '!' means both Insert and Command-Line mode.
+	'BS' is a Backspace.
+
+	First we map <C-BS> to <C-w>
+	However, that won't be enough.
+	We have to map <C-h> to <C-w> for some reason.
+
+	Now, we map <C-w> to <C-\\><C-o>dB
+
+	Let's break it down:
+		<C-\\> => switch to normal mode for one command.
+		<C-o> => execute the next command in normal mode.
+                dB => delete a Word from the back.
+
+	And we do the similar thing with mapping <C-BS> <C-\\><C-o>db
+
+	I have no idea why I have to write all of this, but as a matter of fact
+	it simply won't work if you delete any line, even if it seems as it
+	should.
