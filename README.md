@@ -421,8 +421,8 @@ for key in ['<Up>', '<Down>', '<Left>', '<Right>']
 endfor
 ```
 
-### noremap! \<C-BS> <C-w>
-### noremap! \<C-h> <C-w>
+### noremap! \<C-BS> \<C-w>
+### noremap! \<C-h> \<C-w>
 ### inoremap <C-w> <C-\\><C-o>dB
 ### inoremap <C-BS> <C-\\><C-o>db
 
@@ -440,7 +440,7 @@ endfor
 	Let's break it down:
 		<C-\\> => switch to normal mode for one command.
 		<C-o>  => execute the next command in normal mode.
-                dB     => delete a Word from the back.
+                dB   => delete a Word from the back.
 
 	And we do the similar thing with mapping <C-BS> <C-\\><C-o>db
 
