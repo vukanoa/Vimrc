@@ -447,3 +447,26 @@ endfor
 	I have no idea why I have to write all of this, but as a matter of fact
 	it simply won't work if you delete any line, even if it seems as it
 	should.
+
+# autocmd BufWritePre * %s/\s\+$//e
+
+	Overall, this command automatically removes trailing whitespace from files
+	whenever you save them.
+
+	Let's breakdown:
+	autocmd BufWritePre => Before writing the whole buffer to a file.
+	Meaning, the following command will happen right before it is saved. Right
+	before I press :w<CR> or ZZ to save.
+
+	* => means that this will aplly to all file types.
+	
+	%s/\s\+$//e
+		%s    => '%' means whole buffer and 's' means substitute. So:
+		         Substitute a whole buffer to replace a regular expression
+			 pattern with a replacement string.
+		/     => Opening Delimiter
+		\s\+$ => The pattern which matches one or more whitespace
+		         characters ('\s') at the end of a line ('$').
+		/     => Delimiter
+		/     => Closing Delimiter(Here replacement string is empty)
+		e     => If no matches are found, don't report an error.
