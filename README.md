@@ -470,3 +470,8 @@ endfor
 		/     => Delimiter
 		/     => Closing Delimiter(Here replacement string is empty)
 		e     => If no matches are found, don't report an error.
+
+# map <F6> :setlocal spell! spelllang=eng_us<CR>
+
+	Map F6 key to run a spellchecker.
+	TODO: In Depth explanation how a built-in spellcheker in Vim works.
