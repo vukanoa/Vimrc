@@ -16,7 +16,7 @@ TODO: Detailed explanation of every feature
 
 ### set bg=dark
 
-	sets the Backgorund base color to be dark. Colorschemes work on top of
+	sets the Background base color to be dark. Colorschemes work on top of
 	this color.
 
 ### colorscheme gruvbox
