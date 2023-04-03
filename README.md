@@ -256,8 +256,11 @@ TODO: Detailed explanation of every feature
 
 ### vnoremap p "_dP
 
+	Essentially this will just paste over the selected text.
+	
+	Explanation:
 	When I select some characters(i.e. I'm in VISUAL mode) and press 'p'
-	the commands that will be execued are the following: "_ d P
+	the commands that will be executed are the following: "_ d P
 	(What that does mean?)
 	1. "_  => is a "black hole" register
 	2. d is a command to delete.
@@ -270,7 +273,6 @@ TODO: Detailed explanation of every feature
 	3. P => We use 'P', instead of 'p' (lowercase), to paste before.
 	
 	You can check the state of registers with :registers<CR>
-	Essentially this will just paste over the selected text.
 
 ### nnoremap Y v$hy
 
