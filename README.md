@@ -276,11 +276,11 @@ TODO: Detailed explanation of every feature
 
 ### nnoremap Y v$hy
 
-	1. v - Go in VISUAL mode
-	2. $ - Go to the end of the line(this will select everything from the character we
+	1. v => Go in VISUAL mode
+	2. $ => Go to the end of the line(this will select everything from the character we
 	       were previously on, until the very last character on the line which is \r
-	3. h - Move one character to the left(deselect the last character, that is \r
-	4. y - Yank. Copy the selected text in register ""
+	3. h => Move one character to the left(deselect the last character, that is \r
+	4. y => Yank. Copy the selected text in register ""
 
 	Essentially this makes 'Y' executed in NORMAL mode copy everything on the line
 	after the character we're currently on, including the character we're on.
@@ -297,14 +297,14 @@ TODO: Detailed explanation of every feature
 	
 	1. When I press open parenthesis '(' I wanto you to write "()<++><Esc>F)i
 		Let's unpack it:
-			()    - Open and close parentheses
-			<++>  - I use this as a dummy "value" which I jump to with a shortcut(will be
+			()    => Open and close parentheses
+			<++>  => I use this as a dummy "value" which I jump to with a shortcut(will be
 				writen down there).
-			<Esc> - Exit INSERT mode and enter NORMAL mode(It's a SINGLE, Escape, character
+			<Esc> => Exit INSERT mode and enter NORMAL mode(It's a SINGLE, Escape, character
 				not a sequence of characters: '<' 'E' 's' 'c' '>')
-			F)    - From the character I'm currently on, search BACKWARDS and jump to first
+			F)    => From the character I'm currently on, search BACKWARDS and jump to first
 				found closed parenthesis ')'
-			i     - Go in insert mode the character before closed parenthesis ')'. This
+			i     => Go in insert mode the character before closed parenthesis ')'. This
 				enables us to write inside the parentheses.
 
 ### autocmd Filetype c inoremap " ""<++><Esc>F"i
@@ -316,14 +316,14 @@ TODO: Detailed explanation of every feature
 	" => When we press " do things(below listed) that are written after the <Space> character.
 	""<++><Esc>F"i
 		Okay let's unpack this:
-			"" - Open and close quotes
-			<++>  - I use this as a dummy "value" which I jump to with a shortcut(will be
+			""    => Open and close quotes
+			<++>  => I use this as a dummy "value" which I jump to with a shortcut(will be
 			        written down there).
-			<Esc> - Exist INSERT mode and enter NORMAL mode(It's a SINGLE, Escape, character
+			<Esc> => Exist INSERT mode and enter NORMAL mode(It's a SINGLE, Escape, character
 				not a sequence of characters: '<' 'E' 's' 'c' '>')
-			F"    - From the character I'm currently on, search and jump to first found
+			F"    => From the character I'm currently on, search and jump to first found
 				closed quote '"'
-			i     - Go in insert mode the character before closed quote '"'. This enables us to
+			i     => Go in insert mode the character before closed quote '"'. This enables us to
 			      write inside the quotes.
 	
 	Summary:
@@ -376,10 +376,10 @@ TODO: Detailed explanation of every feature
 
 		
 	First, let's unpack the command "nnoremap".
-	n => while in NORMAL mode
-	nore => don't do recursively commands if the one I use is already mapped to something else
-	map => map the key-combination left of <Space>(which is a delimiter between "when I press" and
-	       "do these commands")
+		n    => while in NORMAL mode
+		nore => don't do recursively commands if the one I use is already mapped to something else
+		map  => map the key-combination left of <Space>(which is a delimiter between "when I press" and
+	                "do these commands")
 	
 	When I press <C-h> I want you to do <C-w>h
 		What does <C-w>h do?
@@ -404,10 +404,10 @@ TODO: Detailed explanation of every feature
 		10<C-w>>
 	
 	Let's unpack:
-		10    - This many times repeat the following sequence
-		<C-w> - Litteraly pressing CTRL w    // <C-w> is a command you type before doing
+		10    => This many times repeat the following sequence
+		<C-w> => Litteraly pressing CTRL w    // <C-w> is a command you type before doing
 		        anything with windows.
-		>     - Shift the window to the right(this shifts window ONLY because we have
+		>     => Shift the window to the right(this shifts window ONLY because we have
 		        used <C-w> before '>', otherwise would just shift the current line to
 			right by 10 * shiftwidth
 	
