@@ -353,10 +353,10 @@ TODO: Detailed explanation of every feature
 ### nnoremap \<C-d> \<C-u>M
 
 	1) nnoremap
-		n    - While in NORMAL mode
-		nore - Don't execute this command recursively if another thing is mapped to this
+		n    => While in NORMAL mode
+		nore => Don't execute this command recursively if another thing is mapped to this
 		       "result"(thing after the <Space>)
-		map  - When I press the command left of the <Space> char do the thing after
+		map  => When I press the command left of the <Space> char do the thing after
 		       the <Space>
 		
 	2) <C-d>
@@ -386,17 +386,17 @@ TODO: Detailed explanation of every feature
 			That's a built-in function in Vim. It jumps to the window that is LEFT of the
 			current one.
 	
-	h - LEFT
-	j - DOWN
-	k - UP
-	l - RIGHT
+	h => LEFT
+	j => DOWN
+	k => UP
+	l => RIGHT
 
 
 ### noremap \<Leader>h 10\<C-w>>		
 ### noremap \<Leader>l 10\<C-w>\<
 
 	noremap is explained above.
-	<leader> - For me this is a <Space> character
+	<leader> => For me this is a <Space> character
 	
 	So, when I press:
 		<Space>h
