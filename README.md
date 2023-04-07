@@ -475,14 +475,14 @@ endfor
 
 # map <F6> :setlocal spell! spelllang=eng_us<CR>
 
-	Map F6 key to run a spellchecker.
+	Map F6 key to toggle a spellchecker.
+	'!' => At the end of the command represents the "toggle" option. When used
+	       with "spell" option, it toggles the state of the spell checker, i.e.,
+	       it turns it on if it was off, and turns it off it it was on.
+	       
 	TODO: In Depth explanation how a built-in spellcheker in Vim works.
-
-# nnoremap <F7> :setlocal nospell<CR>
-
-	Map F7 to un-run spellchecker.
 	
 # highlight SpellBad ctermbg=red guifg=red
 
-	Highlight missspelled words, when using a spellchecker, in red.
+	Highlight misspelled words, when using a spellchecker, in red.
 
