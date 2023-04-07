@@ -477,3 +477,12 @@ endfor
 
 	Map F6 key to run a spellchecker.
 	TODO: In Depth explanation how a built-in spellcheker in Vim works.
+
+# nnoremap <F7> :setlocal nospell<CR>
+
+	Map F7 to un-run spellchecker.
+	
+# highlight SpellBad ctermbg=red guifg=red
+
+	Highlight missspelled words, when using a spellchecker, in red.
+
