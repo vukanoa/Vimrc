@@ -486,9 +486,15 @@ endfor
 
 	Highlight misspelled words, when using a spellchecker, in red.
 
-" My weird mappings
-
+## My weird mappings
 # inoremap ,, <Esc>/<++><CR>"_c4l
 
-	When I press ',,' in Insert mode, switch to Normal mode first, then search for "<++>" and then delete that and put me in Insert mode.
+	When I press ',,' in Insert mode, switch to Normal mode first, then search for "<++>" and then
+	delete that and put me in Insert mode.
 	Essentially it's a placeholder that I jump to in Insert mode.
+
+# nnoremap <Leader>vim :vs ~/.vimrc<CR>
+
+	I use <Space> character as my <Leader> key.
+	When I press '<Space>' + "vim", split screen horizontally in current buffer in Vim and
+	open .vimrc file.
