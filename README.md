@@ -299,13 +299,13 @@ TODO: Detailed explanation of every feature
 		Let's unpack it:
 			()    => Open and close parentheses
 			<++>  => I use this as a dummy "value" which I jump to with a shortcut(will be
-				writen down there).
+				 writen down there).
 			<Esc> => Exit INSERT mode and enter NORMAL mode(It's a SINGLE, Escape, character
-				not a sequence of characters: '<' 'E' 's' 'c' '>')
+				 not a sequence of characters: '<' 'E' 's' 'c' '>')
 			F)    => From the character I'm currently on, search BACKWARDS and jump to first
-				found closed parenthesis ')'
+				 found closed parenthesis ')'
 			i     => Go in insert mode the character before closed parenthesis ')'. This
-				enables us to write inside the parentheses.
+				 enables us to write inside the parentheses.
 
 ### autocmd Filetype c inoremap " ""<++><Esc>F"i
 
@@ -318,13 +318,13 @@ TODO: Detailed explanation of every feature
 		Okay let's unpack this:
 			""    => Open and close quotes
 			<++>  => I use this as a dummy "value" which I jump to with a shortcut(will be
-			        written down there).
+			         written down there).
 			<Esc> => Exist INSERT mode and enter NORMAL mode(It's a SINGLE, Escape, character
-				not a sequence of characters: '<' 'E' 's' 'c' '>')
+				 not a sequence of characters: '<' 'E' 's' 'c' '>')
 			F"    => From the character I'm currently on, search and jump to first found
-				closed quote '"'
-			i     => Go in insert mode the character before closed quote '"'. This enables us to
-			      write inside the quotes.
+				 closed quote '"'
+			i     => Go in insert mode the character before closed quote '"'. This enables us
+			         to write inside the quotes.
 	
 	Summary:
 		Only in .c files and I type "
@@ -378,8 +378,8 @@ TODO: Detailed explanation of every feature
 	First, let's unpack the command "nnoremap".
 		n    => while in NORMAL mode
 		nore => don't do recursively commands if the one I use is already mapped to something else
-		map  => map the key-combination left of <Space>(which is a delimiter between "when I press" and
-	                "do these commands")
+		map  => map the key-combination left of <Space>(which is a delimiter between "when I press"
+		        and "do these commands")
 	
 	When I press <C-h> I want you to do <C-w>h
 		What does <C-w>h do?
@@ -406,10 +406,10 @@ TODO: Detailed explanation of every feature
 	Let's unpack:
 		10    => This many times repeat the following sequence
 		<C-w> => Litteraly pressing CTRL w    // <C-w> is a command you type before doing
-		        anything with windows.
+		         anything with windows.
 		>     => Shift the window to the right(this shifts window ONLY because we have
-		        used <C-w> before '>', otherwise would just shift the current line to
-			right by 10 * shiftwidth
+		         used <C-w> before '>', otherwise would just shift the current line to
+			 right by 10 * shiftwidth
 	
 	It's the same for '<' but only move Window to the left instead of right.
 
@@ -428,7 +428,7 @@ endfor
 ### inoremap <C-w> <C-\\><C-o>dB
 ### inoremap <C-BS> <C-\\><C-o>db
 
-	It makes Control+BackSpace delete a whole word as in any other place you tybe.
+	It makes Control+BackSpace delete a whole word as in any other place you type.
 
 	First of all: '!' means both Insert and Command-Line mode.
 	'BS' is a Backspace.
@@ -442,7 +442,7 @@ endfor
 	Let's break it down:
 		<C-\\> => switch to normal mode for one command.
 		<C-o>  => execute the next command in normal mode.
-                dB   => delete a Word from the back.
+		dB     => delete a Word from the back.
 
 	And we do the similar thing with mapping <C-BS> <C-\\><C-o>db
 
