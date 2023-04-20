@@ -1,9 +1,8 @@
 # Vimrc
 
-## Explanations for every feature in my Vimrc
+## Explanation for every feature in my Vimrc
 
-TODO: Detailed explanation of every feature
-
+**This is more of a DOCUMENTATION.md than a README.md file**
 (Some explanations are my own, some are from the help pages)
 
 ### syntax on
