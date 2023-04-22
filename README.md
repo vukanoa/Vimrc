@@ -492,7 +492,7 @@ endfor
 	delete that and put me in Insert mode.
 	Essentially it's a placeholder that I jump to in Insert mode.
 
-# nnoremap <Leader>vim :vs ~/.vimrc<CR>
+# nnoremap \<Leader>vim :vs ~/.vimrc<CR>
 
 	I use <Space> character as my <Leader> key.
 	When I press '<Space>' + "vim", split screen horizontally in current buffer in Vim and
