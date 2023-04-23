@@ -497,3 +497,27 @@ endfor
 	I use <Space> character as my <Leader> key.
 	When I press '<Space>' + "vim", split screen horizontally in current buffer in Vim and
 	open .vimrc file.
+
+# inoremap ,for <Esc>:read ~/.vim/snippets/for<CR>:set lazyredraw<CR>kddV3j=/<++><CR>"_c4l
+
+	This is a snipper. Once I press ",for" in INSERT mode, a "for loop" will appear along with
+	placeholders "<++>" which I can jump on with ",," as mentioned above.
+	
+	Essentially once you type ",for" you only have to type things you need and press ",," when
+	you are done typing in that position.
+	
+	Here is an example. If you want to achieve this:
+	for (int i = 0; i < n; i++)
+	{
+	    std::cout << i;
+	}
+	
+	You LITERALLY have to type this sequence(without the quotes):
+		",fori,,0,,i,,n,,i,,std::cout << i;"
+	
+	You don't have to reach out to arrow keys or exit INSERT mode and then move in NORMAL mode or
+	anything similar.
+	
+	Your hands are on the homerow the whole time. At first this feels weird, but after a short
+	period if you try writing these snippets by hand it becomes painful and you see how much
+	more convenient it is to write it this way.
