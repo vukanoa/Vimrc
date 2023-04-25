@@ -500,7 +500,7 @@ endfor
 
 # inoremap ,for <Esc>:read ~/.vim/snippets/for<CR>:set lazyredraw<CR>kddV3j=/<++><CR>"_c4l
 
-	This is a snipper. Once I press ",for" in INSERT mode, a "for loop" will appear along with
+	This is a snippet. Once I press ",for" in INSERT mode, a "for loop" will appear along with
 	placeholders "<++>" which I can jump on with ",," as mentioned above.
 	
 	Essentially once you type ",for" you only have to type things you need and press ",," when
@@ -521,3 +521,6 @@ endfor
 	Your hands are on the homerow the whole time. At first this feels weird, but after a short
 	period if you try writing these snippets by hand it becomes painful and you see how much
 	more convenient it is to write it this way.
+	
+	lazyredraw means - Once set, the screen will not be redrawn while executing macros,
+	registers and other commands that have not been typed.
