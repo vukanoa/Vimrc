@@ -524,3 +524,19 @@ endfor
 	
 	lazyredraw means - Once set, the screen will not be redrawn while executing macros,
 	registers and other commands that have not been typed.
+
+# nnoremap ,ma <Esc>:read ~/.vim/snippets/makefile_skeleton<CR>kdd/<++><CR>"_c4l
+
+	Once I type(Without quotes, in NORMAL mode):
+		,ma
+	
+	I want you to write a simple makefile for LeetCode problems with "<++>" placeholders.
+
+# nnoremap ,mp <Esc>:read ~/.vim/snippets/makefile_project<CR>kdd
+
+	Once I type(Without quotes, in NORMAL mode):
+		,mp
+	
+	I want you to write makefile script for a Project with multiple files:
+		*.cpp, *.h files
+	in "src" and "hdr" subfolders, respectively.
