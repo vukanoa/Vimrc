@@ -540,3 +540,60 @@ endfor
 	I want you to write makefile script for a Project with multiple files:
 		*.cpp, *.h files
 	in "src" and "hdr" subfolders, respectively.
+
+# nnoremap ,lee <Esc>:read ~/.vim/snippets/leet_cpp<CR>kdd/<++><CR>"_d4l
+	
+	This is a LeetCode snippet. Once you open a *.cpp file in which you intend to do
+	a LeetCode problem, while you're in NORMAL mode, type:
+		,lee
+	
+	and then right after it, follow with one of these three options:
+		1) ,es
+		2) ,md
+		3) ,hd
+	for EASY, MEDIUM or HARD problem, respectively.
+	
+	Once you do that just start typing where you are and then use ",," to jump to
+	placeholders "<++>" and continue filling the placeholders.
+
+# nnoremap ,es <Esc>:read ~/.vim/snippets/easy<CR>/<++><CR>"_c4l
+
+	This is a small snippet which prints "EASY" surrounded by a bunch of "=" signs.
+	This command should come AFTER, in an emtpy file in NORMAL mode, you've typed:
+		,lee
+	which will write a LeetCode snippet that I have for every LeetCode problem
+	that I do.
+	
+	So once you open a *.cpp file in which you intend to write a LeetCode problem,
+	you should type:
+		.lee,es
+	
+	if you're solving an EASY problem on Leetcode.
+	
+# nnoremap ,md <Esc>:read ~/.vim/snippets/medium<CR>/<++><CR>"_c4l
+	
+	This is a small snippet which prints "MEDIUM" surrounded by a bunch of "=" signs.
+	This command should come AFTER, in an emtpy file in NORMAL mode, you've typed:
+		,lee
+	which will write a LeetCode snippet that I have for every LeetCode problem
+	that I do.
+	
+	So once you open a *.cpp file in which you intend to write a LeetCode problem,
+	you should type:
+		.lee,md
+	
+	if you're solving an MEDIUM problem on Leetcode.
+	
+# nnoremap ,hd <Esc>:read ~/.vim/snippets/hard<CR>/<++><CR>"_c4l
+	
+	This is a small snippet which prints "MEDIUM" surrounded by a bunch of "=" signs.
+	This command should come AFTER, in an emtpy file in NORMAL mode, you've typed:
+		,lee
+	which will write a LeetCode snippet that I have for every LeetCode problem
+	that I do.
+	
+	So once you open a *.cpp file in which you intend to write a LeetCode problem,
+	you should type:
+		.lee,hd
+	
+	if you're solving an HARD problem on Leetcode.
