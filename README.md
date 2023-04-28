@@ -3,6 +3,7 @@
 ## Explanation for every feature in my Vimrc
 
 **This is more of a DOCUMENTATION.md than a README.md file**
+
 (Some explanations are my own, some are from the help pages)
 
 ### syntax on
@@ -95,7 +96,7 @@
 	Sets the character encoding used inside Vim.  It applies to text in
 	the buffers, registers, Strings in expressions, text stored in the
 	viminfo file, etc.  It sets the kind of characters which Vim can work
-	with.  See |encoding-names| for the possible values.
+	with. See |encoding-names| for the possible values.
 
 	Supported 'encoding' values are:
 		...
@@ -129,8 +130,8 @@
 
 	While typing the search pattern the current match will be shown if the
 	'incsearch' option is on.  Remember that you still have to finish the search
-	command with <CR> to actually position the cursor at the displayed match.  Or
-	use <Esc> to abandon the search.
+	command with <CR> to actually position the cursor at the displayed match.
+	Or use <Esc> to abandon the search.
 
 	All matches for the last used search pattern will be highlighted if you set
 	the 'hlsearch' option.  This can be suspended with the |:nohlsearch| command.
@@ -141,7 +142,7 @@
 	This is the default behaviour, but I like to make it explicit.
 
 	In Insert mode: Use the appropriate number of spaces to insert a
-	<Tab>.  Spaces are used in indents with the '>' and '<' commands and
+	<Tab>. Spaces are used in indents with the '>' and '<' commands and
 	when 'autoindent' is on.
 	
 	To insert a real tab when 'expandtab' is on, use CTRL-V<Tab>.
@@ -165,7 +166,7 @@
 								*/\c* */\C*
 	When "\c" appears anywhere in the pattern, the whole pattern is handled like
 	'ignorecase' is on.  The actual value of 'ignorecase' and 'smartcase' is
-	ignored.  "\C" does the opposite: Force matching case for the whole pattern.
+	ignored. "\C" does the opposite: Force matching case for the whole pattern.
 	{only Vim supports \c and \C}
 	Note that 'ignorecase', "\c" and "\C" are not used for the character classes.
 
@@ -180,14 +181,14 @@
 
 ### set wrap
 	
-	This option changes how text is displayed.  It doesn't change the text  
+	This option changes how text is displayed. It doesn't change the text  
         in the buffer, see 'textwidth' for that.                                
         When on, lines longer than the width of the window will wrap and        
-        displaying continues on the next line.  When off lines will not wrap    
-        and only part of long lines will be displayed.  When the cursor is      
+        displaying continues on the next line. When off lines will not wrap    
+        and only part of long lines will be displayed. When the cursor is      
         moved to a part that is not shown, the screen will scroll               
         horizontally.                                                           
-        The line will be broken in the middle of a word if necessary.  See      
+        The line will be broken in the middle of a word if necessary. See      
         'linebreak' to get the break at a word boundary.                        
         To make scrolling horizontally a bit more useful, try this: >           
                 :set sidescroll=5                                               
@@ -277,7 +278,7 @@
 
 	1. v => Go in VISUAL mode
 	2. $ => Go to the end of the line(this will select everything from the character we
-	       were previously on, until the very last character on the line which is \r
+	        were previously on, until the very last character on the line which is \r
 	3. h => Move one character to the left(deselect the last character, that is \r
 	4. y => Yank. Copy the selected text in register ""
 
@@ -289,10 +290,10 @@
 ### inoremap {<CR> {<CR>}<Esc>O
 	
 	First, let's unpack the command "inoremap".
-	i => while in INSERT mode
+	i    => while in INSERT mode
 	nore => don't do recursively commands if the one I use is already mapped
-	map => map the key-combination left of <Space>(which is a delimiter between "when I press" and
-	       "do these commands")
+	map  => map the key-combination left of <Space>(which is a delimiter between "when I press" and
+	        "do these commands")
 	
 	1. When I press open parenthesis '(' I wanto you to write "()<++><Esc>F)i
 		Let's unpack it:
@@ -310,9 +311,10 @@
 
 	Let's unpack:
 	autocmd Filetype => Do this only for the type of files represented after the Space
-	c => C is the type of file we do this for
+	c        => C is the type of file we do this for
 	inoremap => In INSERT mode not recursively map 
-	" => When we press " do things(below listed) that are written after the <Space> character.
+	"        => When we press " do things(below listed) that are written after the <Space> character.
+	
 	""<++><Esc>F"i
 		Okay let's unpack this:
 			""    => Open and close quotes
