@@ -599,3 +599,20 @@ endfor
 		.lee,hd
 	
 	if you're solving an HARD problem on Leetcode.
+
+# nnoremap ,com <Esc>:read ~/.vim/snippets/complexity<CR>/<++><CR>"_c4l
+
+	This is a "Time and Space Complexity" snippet.
+	In NORMAL mode, once I type(without the quotes):
+		,com
+	
+	Write Time and Space Complexity snippet with placeholders "<++>".
+	
+# nnoremap ,bt <Esc>:read ~/.vim/snippets/beats<CR>/<++><CR>"_c4l
+
+	This is a "Time and Space beating times" snippet.
+	In NORMAL mode, once I type(without the quotes):
+		,bt
+	
+	Write Time and Space beating times snippet with placeholders "<++>".
+	
