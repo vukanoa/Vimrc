@@ -616,3 +616,12 @@ endfor
 	
 	Write Time and Space beating times snippet with placeholders "<++>".
 	
+# nnoremap ,pa <Esc>:read ~/.vim/snippets/print_array<CR><CR>/<++><CR>"_c4l
+	
+	Write a piece of code which properly outputs 1D array in the following format:
+		["1", "2", "3", ... "156", ...]
+		
+# nnoremap ,pd <Esc>:read ~/.vim/snippets/print_array_of_arrays<CR><CR>/<++><CR>"_c4l
+
+	Write a piece of code which properly outputs 2D array in the following format:
+		[["1", "2", "3"], ["4", "5", 6"], ..., ["116", "117", "118"]]
