@@ -625,3 +625,8 @@ endfor
 
 	Write a piece of code which properly outputs 2D array in the following format:
 		[["1", "2", "3"], ["4", "5", 6"], ..., ["116", "117", "118"]]
+
+# nnoremap ,cpp <Esc>:read ~/.vim/snippets/basic_cpp<CR>kdd/<++><CR>"_c4l
+	
+	Write a basic cpp "Hello World" program, with a placeholder instead of
+	"std::cout << "Hello World\n";"
