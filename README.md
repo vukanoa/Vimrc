@@ -630,3 +630,29 @@ endfor
 	
 	Write a basic cpp "Hello World" program, with a placeholder instead of
 	"std::cout << "Hello World\n";"
+
+# nnoremap <Leader>p <Esc>:bprev<CR>
+
+	If I open multiple buffers, I can go to ***previous*** buffer when in NORMAL mode
+	I press:
+		<Leader>p
+	
+	<Leader> is <Space> in my configuration, as specified above in this Documentation.
+	
+	(to enter a COMMAND mode type(without quotes) ':')
+	How to open a new buffer? In COMMAND mode type:
+		:n <file_name><CR>
+	
+	where <file_name> should be exchanged with the file you want to open. Such as:
+		:n blabla.txt<CR>
+	
+	<CR> => Carriage Return, i.e. press Enter
+	
+	To check which buffers are currently open, enter the COMMAND mode and type:
+		buffers<CR>
+		
+# nnoremap <Leader>n <Esc>:bnext<CR>
+
+	Similar as above, if I open multiple buffers, I can go to ***previous*** buffer
+	when in NORMAL mode I press:
+		<Leader>n
