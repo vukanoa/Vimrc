@@ -656,3 +656,11 @@ endfor
 	Similar as above, if I open multiple buffers, I can go to ***previous*** buffer
 	when in NORMAL mode I press:
 		<Leader>n
+
+# nnoremap <Tab> gt
+
+	If I open a new tab in Vim with:
+		`:tabnew <filename><CR>`
+	
+	I can iterate through tabs with a <Tab> character instead
+	of typing 'gt' over and over again.
