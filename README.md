@@ -653,7 +653,7 @@ endfor
 		
 # nnoremap <Leader>n <Esc>:bnext<CR>
 
-	Similar as above, if I open multiple buffers, I can go to ***previous*** buffer
+	Similar as above, if I open multiple buffers, I can go to **previous** buffer
 	when in NORMAL mode I press:
 		<Leader>n
 
@@ -662,5 +662,5 @@ endfor
 	If I open a new tab in Vim with:
 		`:tabnew <filename><CR>`
 	
-	I can iterate through tabs with a <Tab> character instead
+	I can iterate through tabs, in NORMAL mode, with a <Tab> character instead
 	of typing 'gt' over and over again.
