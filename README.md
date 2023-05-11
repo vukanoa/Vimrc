@@ -285,6 +285,12 @@
 	Essentially this makes 'Y' executed in NORMAL mode copy everything on the line
 	after the character we're currently on, including the character we're on.
 
+# let &t_SI = "\e[6 q"
+# let &t_EI = "\e[2 q"
+
+	Make cursor a Bar instead of a Block in INSERT mode.
+	I have no idea how this works, but it works.
+
 ### inoremap ( ()<++><Esc>F)i
 ### inoremap [ []<++><Esc>F]i
 ### inoremap {<CR> {<CR>}<Esc>O
