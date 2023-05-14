@@ -16,7 +16,7 @@
 
 ### set bg=dark
 
-	sets the Background base color to be dark. Colorschemes work on top of
+	sets the Background base color to be dark. Color schemes work on top of
 	this color.
 
 ### colorscheme gruvbox
@@ -33,7 +33,7 @@
 	For example if Current version:
 		VIM - Vi Improved 9.0 (2022 Jun 28, compiled Sep 6 2022 16:16:10)
 
-	cheanges into, say:
+	Changes into, say:
 		VIM - Vi Improved 9.3(2023 Feb 12, compiled at Feb 15 2023 1:11:11)
 
 	Then you have to put the file "gruvbox" into:
@@ -47,18 +47,18 @@
 	shortcuts.
 
 	To define a mapping which uses the "g:mapleader" variable, the special
-	string "<Leader>" can be used. It is replace with the string value of
+	string "<Leader>" can be used. It is replaced with the string value of
 	"g:mapleader". If "g:mapleader" is not set or empty, a backslash is used
 	instead. Example:
-		map <Leader>A oanother line<Esc>
+		map <Leader>A another line<Esc>
 	Works like:
-		map \A oanother line<Esc>
+		map \A another line<Esc>
 	But after (legacy script):
 		let mapleader = ","
 	or (Vim9 script):
 		g:mapleader = ","
 	It works like:
-		map ,A oanother line<Esc>
+		map ,A another line<Esc>
 
 	Note that the value of "g:mapleader" is used at the moment the mapping is
 	defined. Changing "g:mapleader" after that has no effect for already
@@ -412,7 +412,7 @@
 	
 	Let's unpack:
 		10    => This many times repeat the following sequence
-		<C-w> => Litteraly pressing CTRL w    // <C-w> is a command you type before doing
+		<C-w> => Literally pressing CTRL w    // <C-w> is a command you type before doing
 		         anything with windows.
 		>     => Shift the window to the right(this shifts window ONLY because we have
 		         used <C-w> before '>', otherwise would just shift the current line to
@@ -670,3 +670,4 @@ endfor
 	
 	I can iterate through tabs, in NORMAL mode, with a <Tab> character instead
 	of typing 'gt' over and over again.
+
