@@ -639,7 +639,7 @@ endfor
 
 # nnoremap <Leader>p <Esc>:bprev<CR>
 
-	If I open multiple buffers, I can go to ***previous*** buffer when in NORMAL mode
+	If I open multiple buffers, I can go to previous buffer when in NORMAL mode
 	I press:
 		<Leader>p
 	
@@ -659,7 +659,7 @@ endfor
 		
 # nnoremap <Leader>n <Esc>:bnext<CR>
 
-	Similar as above, if I open multiple buffers, I can go to **previous** buffer
+	Similar as above, if I open multiple buffers, I can go to previous buffer
 	when in NORMAL mode I press:
 		<Leader>n
 
