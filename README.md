@@ -276,6 +276,8 @@
 
 ### nnoremap Y v$hy
 
+	When in NORMAL mode you type 'Y' (without the quotes), do these commands:
+
 	1. v => Go in VISUAL mode
 	2. $ => Go to the end of the line(this will select everything from the character we
 	        were previously on, until the very last character on the line which is \r
