@@ -109,20 +109,23 @@ autocmd BufWritePre * %s/\s\+$//e
 " My weird mappings
 inoremap ,, <Esc>/<++><CR>"_c4l
 nnoremap <Leader>vim :vs ~/.vimrc<CR>
-inoremap ,for <Esc>:read ~/.vim/snippets/for<CR>:set lazyredraw<CR>kddV3j=/<++><CR>"_c4l
 nnoremap <leader>in =a{
 nnoremap <leader>sp O<Esc>jo<Esc>k
 nnoremap <leader>cen :vs bla<CR><C-w>r40<C-w><<C-w>l
+inoremap ,for <Esc>:read ~/.vim/snippets/for<CR>:set lazyredraw<CR>kddV3j=/<++><CR>"_c4l
 nnoremap ,ma <Esc>:read ~/.vim/snippets/makefile_skeleton<CR>kdd/<++><CR>"_c4l
 nnoremap ,mp <Esc>:read ~/.vim/snippets/makefile_project<CR>kdd
+nnoremap ,sol <Esc>:read ~/.vim/snippets/solution_cpp<CR>kdd/<++><CR>"_c4l
+nnoremap ,lee <Esc>:read ~/.vim/snippets/leet_cpp<CR>kdd/<++><CR>"_d4l
 nnoremap ,es <Esc>:read ~/.vim/snippets/easy<CR>/<++><CR>"_c4l
 nnoremap ,md <Esc>:read ~/.vim/snippets/medium<CR>/<++><CR>"_c4l
 nnoremap ,hd <Esc>:read ~/.vim/snippets/hard<CR>/<++><CR>"_c4l
 nnoremap ,id <Esc>:read ~/.vim/snippets/idea<CR>/<++><CR>"_c4l
 nnoremap ,com <Esc>:read ~/.vim/snippets/complexity<CR>/<++><CR>"_c4l
-nnoremap ,lee <Esc>:read ~/.vim/snippets/leet_cpp<CR>kdd/<++><CR>"_d4l
-nnoremap ,cpp <Esc>:read ~/.vim/snippets/basic_cpp<CR>kdd/<++><CR>"_c4l
+nnoremap ,bt <Esc>:read ~/.vim/snippets/beats<CR>/<++><CR>"_c4l
 nnoremap ,pa <Esc>:read ~/.vim/snippets/print_array<CR><CR>/<++><CR>"_c4l
 nnoremap ,pd <Esc>:read ~/.vim/snippets/print_array_of_arrays<CR><CR>/<++><CR>"_c4l
+nnoremap ,cpp <Esc>:read ~/.vim/snippets/basic_cpp<CR>kdd/<++><CR>"_c4l
 nnoremap <Leader>p <Esc>:bprev<CR>
 nnoremap <Leader>n <Esc>:bnext<CR>
+nnoremap <Tab> gt
