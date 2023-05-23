@@ -260,9 +260,9 @@
 	
 	Explanation:
 	When I select some characters(i.e. I'm in VISUAL mode) and press 'p'
-	the commands that will be executed are the following: "_ d P
+	the commands that will be executed are the following: "_dP
 	(What that does mean?)
-	1. "_  => is a "black hole" register
+	1. "_  => is a "black hole" register (" denotes a register, '_' is a type)
 	2. d is a command to delete.
 	
 	So it means that we're deleting what is currently selected, but
@@ -477,7 +477,14 @@ endfor
 			 pattern with a replacement string.
 		/     => Opening Delimiter
 		\s\+$ => The pattern which matches one or more whitespace
-		         characters ('\s') at the end of a line ('$').
+		         characters.
+			    \s => Whitespace character
+			    \+ => '+' pertains to previous character(whitespace
+			          in this case), but we also have to "Escape it"
+			          to emphasize that we don't want to search for a
+			          literal character '+'.
+			    $  => End of a line. Meaning, whitespace characters that
+			          are "glued" to the end of the line.
 		/     => Delimiter
 		/     => Closing Delimiter(Here replacement string is empty)
 		e     => If no matches are found, don't report an error.
