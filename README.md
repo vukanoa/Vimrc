@@ -181,20 +181,21 @@
 
 ### set wrap
 	
-	This option changes how text is displayed. It doesn't change the text
-	in the buffer, see 'textwidth' for that.
-	When on, lines longer than the width of the window will wrap and
-        displaying continues on the next line. When off lines will not wrap
-        and only part of long lines will be displayed. When the cursor is
-        moved to a part that is not shown, the screen will scroll
-        horizontally.
-        The line will be broken in the middle of a word if necessary. See
-        'linebreak' to get the break at a word boundary.
-        To make scrolling horizontally a bit more useful, try this:          
-                :set sidescroll=5                                               
-                :set listchars+=precedes:<,extends:>                            
-	See 'sidescroll', 'listchars' and |wrap-off|.    
-	
+This option changes how text is displayed. It doesn't change the text
+in the buffer, see 'textwidth' for that.
+
+When on, lines longer than the width of the window will wrap and
+displaying continues on the next line. When off lines will not wrap
+and only part of long lines will be displayed. When the cursor is
+moved to a part that is not shown, the screen will scroll
+horizontally.
+The line will be broken in the middle of a word if necessary. See
+'linebreak' to get the break at a word boundary.
+To make scrolling horizontally a bit more useful, try this:          
+        :set sidescroll=5                                               
+        :set listchars+=precedes:<,extends:>                            
+See 'sidescroll', 'listchars' and |wrap-off|.
+
 ### set linebreak
 
 	boolean (default off)
