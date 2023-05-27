@@ -4,6 +4,9 @@ set bg=dark
 " :set runtimepath
 " usr/local/share/vim/vim90/colors/grubvox.vim
 colorscheme gruvbox
+" set termguicolors
+" hi Normal guibg=#300A24
+" highlight Normal ctermfg=grey ctermbg=8
 
 let mapleader="\<Space>"
 
@@ -104,7 +107,17 @@ inoremap <C-w> <C-\><C-o>dB
 inoremap <C-BS> <C-\><C-o>db
 
 " Remove trailing whitespace on save
-autocmd BufWritePre * %s/\s\+$//e
+" autocmd BufWritePre * %s/\s\+$//e
+
+" Spell Check
+	map <F6> :setlocal spell! spelllang=en_us<CR>
+	nnoremap <F7> :setlocal nospell<CR>
+	highlight SpellBad ctermbg=red ctermfg=black
+	highlight SpellLocal ctermbg=magenta ctermfg=black
+	highlight SpellRare ctermbg=yellow ctermfg=black
+	" highlight SpellBad ctermbg=red
+	" highlight SpellLocal ctermbg=magenta
+	" highlight SpellRare ctermbg=yellow
 
 " My weird mappings
 inoremap ,, <Esc>/<++><CR>"_c4l
