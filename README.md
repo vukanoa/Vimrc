@@ -644,8 +644,9 @@ endfor
 
 # nnoremap ,cpp <Esc>:read ~/.vim/snippets/basic_cpp<CR>kdd/<++><CR>"_c4l
 	
-	Write a basic cpp "Hello World" program, with a placeholder instead of
-	"std::cout << "Hello World\n";"
+	Write a basic cpp "Hello World" program, with a placeholder without the:
+		std::cout << "Hello World\n";
+	part.
 
 # nnoremap <Leader>p <Esc>:bprev<CR>
 
