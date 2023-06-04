@@ -462,8 +462,8 @@ endfor
 
 # autocmd BufWritePre * %s/\s\+$//e
 
-	Overall, this command automatically removes trailing whitespace from files
-	whenever you save them.
+	Overall, this command automatically removes trailing whitespace from a file
+	whenever you save the file.
 
 	Let's breakdown:
 	autocmd BufWritePre => Before writing the whole buffer to a file.
