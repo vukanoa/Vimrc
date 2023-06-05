@@ -414,10 +414,10 @@
 		10<C-w>>
 	
 	Let's unpack:
-		10    => This many times repeat the following sequence
+		   10 => This many times repeat the following sequence
 		<C-w> => Literally pressing CTRL w    // <C-w> is a command you type before doing
 		         anything with windows.
-		>     => Shift the window to the right(this shifts window ONLY because we have
+		    > => Shift the window to the right(this shifts window ONLY because we have
 		         used <C-w> before '>', otherwise would just shift the current line to
 			 right by 10 * shiftwidth
 	
@@ -451,8 +451,8 @@ endfor
 
 	Let's break it down:
 		<C-\\> => switch to normal mode for one command.
-		<C-o>  => execute the next command in normal mode.
-		dB     => delete a Word from the back.
+		 <C-o> => execute the next command in normal mode.
+		    dB => delete a Word from the back.
 
 	And we do the similar thing with mapping <C-BS> <C-\\><C-o>db
 
