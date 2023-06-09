@@ -46,6 +46,7 @@ public:
 	<++>
 };
 
+
 int
 main()
 {
@@ -57,11 +58,20 @@ main()
 
 	/* Example 3 */
 
+
 	std::cout << "\n\t==============================";
 	std::cout << "\n\t=== <++> ===";
-	std::cout << "\n\t==============================\n\n";
+	std::cout << "\n\t==============================\n";
+	
 
+	/* Write Input */
+	<++>
+	
 	/* Solution */
+	<++>
+	
+	/* Write Output */
+	<++>
 
 	return 0;
 }
