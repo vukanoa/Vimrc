@@ -647,6 +647,10 @@ endfor
 	Write a basic cpp "Hello World" program, with a placeholder without the:
 		std::cout << "Hello World\n";
 	part.
+			 
+
+# nnoremap ,sm <Esc>:read ~/.vim/snippets/small<CR>kdd/<++><CR>"_d4l
+	Write a LeetCode snippet, without the Testing in main.
 
 # nnoremap <Leader>p <Esc>:bprev<CR>
 
@@ -681,4 +685,3 @@ endfor
 	
 	I can iterate through tabs, in NORMAL mode, with a <Tab> character instead
 	of typing 'gt' over and over again.
-
