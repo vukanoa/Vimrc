@@ -35,6 +35,9 @@ set textwidth=79
 set colorcolumn=80
 highlight ColorColumn ctermbg=Black
 
+" For regular expressions turn magic on
+set magic
+
 " Undo
 if has('persistent_undo')
   set undofile
