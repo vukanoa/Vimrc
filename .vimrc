@@ -38,6 +38,9 @@ highlight ColorColumn ctermbg=Black
 " For regular expressions turn magic on
 set magic
 
+" Show matching words during a search.
+set showmatch
+
 " Undo
 if has('persistent_undo')
   set undofile
