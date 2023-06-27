@@ -41,6 +41,10 @@ set magic
 " Show matching words during a search.
 set showmatch
 
+" Abbrevation
+ab lc LeetCode
+
+
 " Undo
 if has('persistent_undo')
   set undofile
