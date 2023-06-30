@@ -44,6 +44,8 @@ set showmatch
 " Abbrevation
 ab lc LeetCode
 
+" Get rid of annoying ~file
+set nobackup
 
 " Undo
 if has('persistent_undo')
