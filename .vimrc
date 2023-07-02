@@ -47,6 +47,8 @@ ab lc LeetCode
 " Get rid of annoying ~file
 set nobackup
 
+map <Leader>sh :!clear && shellcheck %<CR>
+
 " Undo
 if has('persistent_undo')
   set undofile
