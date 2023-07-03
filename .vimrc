@@ -20,13 +20,16 @@ set nohlsearch
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
-set autoindent "Now both S and cc work with indentation
+set autoindent   "Now both S and cc work with indentation
 set smartindent
 set noexpandtab
 set smarttab
 set backspace=indent,eol,start
 set ruler
 set laststatus=0 "Never have a status line
+set magic        "For regular expressions turn magic on
+set showmatch    "Show matching words during a search.
+set nobackup     "Get rid of annoying ~file
 set ignorecase
 set smartcase
 set wrap
@@ -35,17 +38,8 @@ set textwidth=79
 set colorcolumn=80
 highlight ColorColumn ctermbg=Black
 
-" For regular expressions turn magic on
-set magic
-
-" Show matching words during a search.
-set showmatch
-
 " Abbrevation
 ab lc LeetCode
-
-" Get rid of annoying ~file
-set nobackup
 
 map <Leader>sh :!clear && shellcheck %<CR>
 
