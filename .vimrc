@@ -20,16 +20,17 @@ set nohlsearch
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
-set autoindent   "Now both S and cc work with indentation
+set autoindent   " Now both S and cc work with indentation
 set smartindent
 set noexpandtab
 set smarttab
 set backspace=indent,eol,start
 set ruler
-set laststatus=0 "Never have a status line
-set magic        "For regular expressions turn magic on
-set showmatch    "Show matching words during a search.
-set nobackup     "Get rid of annoying ~file
+set laststatus=0 " Never have a status line
+set magic        " For regular expressions turn magic on
+set showmatch    " Show matching words during a search.
+set nobackup     " Get rid of annoying ~file
+set noesckeys    " Removes possibility to define function keys that start with <Esc>
 set ignorecase
 set smartcase
 set wrap
@@ -56,8 +57,6 @@ set directory^=$HOME/.vim/tmp//
 set path+=**
 set wildmenu
 
-" Removes possibility to define function keys that start with <Esc>
-set noesckeys
 
 " Better than default
 set splitright
