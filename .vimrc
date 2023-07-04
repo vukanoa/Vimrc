@@ -20,17 +20,18 @@ set nohlsearch
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
-set autoindent   " Now both S and cc work with indentation
+set autoindent                     " Now both S and cc work with indentation
 set smartindent
 set noexpandtab
 set smarttab
 set backspace=indent,eol,start
 set ruler
-set laststatus=0 " Never have a status line
-set magic        " For regular expressions turn magic on
-set showmatch    " Show matching words during a search.
-set nobackup     " Get rid of annoying ~file
-set noesckeys    " Removes possibility to define function keys that start with <Esc>
+set laststatus=0                   " Never have a status line
+set magic                          " For regular expressions turn magic on
+set showmatch                      " Show matching words during a search.
+set nobackup                       " Get rid of annoying ~file
+set noesckeys                      " Removes possibility to define function keys that start with <Esc>
+set directory^=$HOME/.vim/tmp//    " Swap files
 set ignorecase
 set smartcase
 set wrap
@@ -50,8 +51,6 @@ if has('persistent_undo')
   set undodir=$HOME/.vim/.undo
 endif
 
-" Swap files
-set directory^=$HOME/.vim/tmp//
 
 " Built in Fuzzy finder
 set path+=**
