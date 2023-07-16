@@ -27,7 +27,6 @@ set smarttab
 set backspace=indent,eol,start
 set ruler
 set laststatus=0                   " Never have a status line
-set magic                          " For regular expressions turn magic on
 set showmatch                      " Show matching words during a search.
 set nobackup                       " Get rid of annoying ~file
 set noesckeys                      " Removes possibility to define function keys that start with <Esc>
