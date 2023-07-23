@@ -39,9 +39,6 @@ set textwidth=79
 set colorcolumn=80
 highlight ColorColumn ctermbg=Black
 
-" Abbrevation
-ab lc LeetCode
-
 map <Leader>sh :!clear && shellcheck %<CR>
 
 " Undo
