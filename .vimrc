@@ -127,6 +127,7 @@ nnoremap <Leader>vim :vs ~/.vimrc<CR>
 nnoremap <leader>in =a{
 nnoremap <leader>sp O<Esc>jo<Esc>k
 nnoremap <leader>cen :vs bla<CR><C-w>r40<C-w><<C-w>l
+nnoremap <leader>li :set list!<CR>
 inoremap ,for <Esc>:read ~/.vim/snippets/for<CR>:set lazyredraw<CR>kddV3j=/<++><CR>"_c4l
 nnoremap ,ma <Esc>:read ~/.vim/snippets/makefile_skeleton<CR>kdd/<++><CR>"_c4l
 nnoremap ,mp <Esc>:read ~/.vim/snippets/makefile_project<CR>kdd
