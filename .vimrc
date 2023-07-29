@@ -31,6 +31,7 @@ set showmatch                      " Show matching words during a search.
 set nobackup                       " Get rid of annoying ~file
 set noesckeys                      " Removes possibility to define function keys that start with <Esc>
 set directory^=$HOME/.vim/tmp//    " Swap files
+set nodiff                         " Don't use diff mode for the current window
 set ignorecase
 set smartcase
 set wrap
