@@ -6,6 +6,8 @@
 
 (Some explanations are my own, some are from the help pages)
 
+**Incomplete**
+
 ### syntax on
 
 	Syntax highlighting enables Vim to show parts of the text in another font
