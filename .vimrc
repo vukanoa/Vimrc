@@ -8,6 +8,8 @@ colorscheme gruvbox
 " hi Normal guibg=#300A24
 " highlight Normal ctermfg=grey ctermbg=8
 
+highlight SpecialKey ctermfg=grey guifg=grey70
+
 let mapleader="\<Space>"
 
 set nocompatible
