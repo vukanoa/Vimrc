@@ -7,7 +7,6 @@
 (Some explanations are my own, some are from the help pages)
 
 **Incomplete**
-TODO later
 
 ### syntax on
 
