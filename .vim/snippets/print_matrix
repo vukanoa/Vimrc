@@ -1,10 +1,10 @@
-    /* Write Output */
+    /* Write Input */
     bool first = true;
-    std::cout << "\n\tResults: [";
-    for (auto x: <++>)
+    std::cout << "\n\tA: \n\t\t[";
+    for (auto x: A)
     {
         if (!first)
-            std::cout << ", ";
+            std::cout << ",\n\t\t ";
 
         bool first_first = true;
         std::cout << "[";
@@ -21,4 +21,3 @@
         first = false;
     }
     std::cout << "]\n\n";
-
